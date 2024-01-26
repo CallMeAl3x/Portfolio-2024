@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Syne;
+  src: url("../src/fonts/Syne/Syne-VariableFont_wght.ttf");
+  font-weight: Medium;
+  font-style: normal;
+}
+
+* {
+  @apply transition-colors duration-200;
+}
+
+.box-shadow-nav {
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Syne;
+}
+
+.navmobile {
+  background-image: url("/background.svg");
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #000;
+  stroke-width: 5.5;
+  stroke-linecap: round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+@layer utilities {
+  .white-path {
+    stroke: #ffffff !important;
+  }
+
+  .black-path {
+    stroke: #000000 !important;
+  }
+}
+
+.gradient-background {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(78, 16, 127, 0.84) 50%,
+    rgba(159, 111, 197, 1) 66%,
+    rgba(230, 199, 255, 1) 81%
+  );
+}
+
+.gradient-background-footer {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(56, 9, 94, 0.84) 55%,
+    rgba(146, 65, 212, 1) 87%,
+    rgba(230, 199, 255, 1) 100%
+  );
+}
+
+.gradient-card {
+  background: rgb(13, 18, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(13, 18, 36, 1) 0%,
+    rgba(48, 8, 79, 1) 100%
+  );
+}
