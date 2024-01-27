@@ -1,14 +1,14 @@
 import { useContext } from "react";
-import Navbar from "./components/NavBar";
 import messagesFr from "./translations/fr.json";
 import messagesEn from "./translations/en.json";
 import { IntlProvider } from "react-intl";
 import { DarkModeContext } from "./DarkModeContext";
 import { useLanguage } from "./LanguageContext";
-import Hero from "./Hero";
 import "./styles/App.css";
-import Works from "./Works";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
+import Works from "./components/Works";
+import Hero from "./components/Hero";
+import Navbar from "./components/NavBar";
 
 const messages = {
   fr: messagesFr,
@@ -20,7 +20,8 @@ const App = () => {
   const { locale } = useLanguage(); // Utilise le hook pour accéder à la langue actuelle
 
   return (
-    <div className={`${darkMode ? "dark" : ""}`}>
+    <div
+      className={`${darkMode ? "" : "dark"} bg-background dark:bg-background`}>
       <IntlProvider locale={locale} messages={messages[locale]}>
         <Navbar />
         <Hero />
