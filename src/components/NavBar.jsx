@@ -35,12 +35,13 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.pageYOffset;
+      console.log(currentScrollY);
       let newActiveSection = "Home";
       const scrollSectionMap = {
         0: "Home",
-        500: "Works",
-        1000: "About",
-        1500: "Contact",
+        830: "Works",
+        2800: "About",
+        3500: "Contact",
       };
 
       for (const scrollY in scrollSectionMap) {
@@ -94,6 +95,10 @@ const Navbar = () => {
 
   const handleHamburgerToggle = () => {
     setIsOpen(!isOpen);
+    if (isOpen) document.body.style.overflow = "auto";
+    else {
+      document.body.style.overflow = "hidden";
+    }
   };
 
   return (
@@ -147,32 +152,26 @@ const Navbar = () => {
       </div>
 
       <nav
-        className={`lg:hidden text-text flex justify-center h-screen w-screen fixed top-0 left-0 transform gradient-nav-light dark:gradient-nav-dark z-100 ${
+        className={`lg:hidden fixed top-0 left-0 h-screen w-screen transform gradient-nav-light dark:gradient-nav-dark box-shadow-nav z-10 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-500 ease-in-out`}>
-        <ul className="flex flex-col gap-12 justify-center items-center text-xl group-last:gap-34">
-          <li
-            className="h-12 w-24 flex justify-center items-center rounded-[60px]"
-            onClick={handleHamburgerToggle}>
-            <a href="#Home">Home</a>
-          </li>
-          <li
-            className="h-12 w-24 flex justify-center items-center rounded-[60px]"
-            onClick={handleHamburgerToggle}>
-            <a href="#About">About</a>
-          </li>
-          <li
-            className="h-12 w-24 flex justify-center items-center rounded-[60px]"
-            onClick={handleHamburgerToggle}>
-            <a href="#Works">Works</a>
-          </li>
-          <li
-            className="h-12 w-24 flex justify-center items-center rounded-[60px]"
-            onClick={handleHamburgerToggle}>
-            <a href="#Contact">Contact</a>
-          </li>
-
-          <div className="flex gap-4 mt-12">
+        <ul className="flex flex-col items-center justify-center h-full w-full py-2 px-6 gap-16">
+          {[
+            ["Home", "#home"],
+            ["Works", "#works"],
+            ["About", "#about"],
+            ["Contact", "#contact"],
+          ].map(([text, href]) => (
+            <li
+              key={text}
+              className={`"text-2xl flex justify-center items-center text-text font-semibold" ${
+                activeSection === text ? "active_mobile" : ""
+              }`}
+              onClick={handleHamburgerToggle}>
+              <a href={href}>{text}</a>
+            </li>
+          ))}
+          <div className="flex gap-4 mt-12 text-2xl font-semibold">
             <button
               onClick={handleLangageToggleEN}
               className={`${locale === "en" ? "text-accent" : "text-text"}`}>
@@ -200,14 +199,14 @@ const Navbar = () => {
           </button>
         </div>
 
-        <nav className="navpc p-4 text-[#e7ebf3] dark:text-text animate__animated animate__slideInDown">
-          <ul className="relative flex gap-16 bg-secondary border-solid border-[#404040]/5 box-shadow-nav rounded-[60px] w-fit justify-center items-center py-2 px-6 text-xl">
+        <nav className="navpc p-4 text-[#e7ebf3] dark:text-text animate__animated animate__slideInDown z-[9999]">
+          <ul className="relative flex gap-16 bg-secondary border-solid border-[#404040]/5 box-shadow-nav z-[9999] rounded-[60px] w-fit justify-center items-center py-2 px-6 text-xl">
             <div className="menu-background" style={backgroundStyle}></div>
             {[
               ["Home", "#home"],
               ["Works", "#works"],
-              ["About", "#About"],
-              ["Contact", "#Contact"],
+              ["About", "#about"],
+              ["Contact", "#contact"],
             ].map(([text, href]) => (
               <li
                 key={text}

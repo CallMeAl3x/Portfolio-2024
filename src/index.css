@@ -13,14 +13,14 @@
   @apply transition-colors duration-200;
 }
 
-.box-shadow-nav {
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.25);
-}
-
 body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Syne;
+}
+
+p {
+  color: var(--text);
 }
 
 html {
@@ -36,12 +36,19 @@ html {
   -ms-user-select: none;
   user-select: none;
 }
+
+.active_mobile {
+  color: var(--accent);
+}
+
 .hamRotate.active {
   transform: rotate(45deg);
 }
+
 .hamRotate180.active {
   transform: rotate(180deg);
 }
+
 .line {
   fill: none;
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
@@ -49,15 +56,19 @@ html {
   stroke-width: 5.5;
   stroke-linecap: round;
 }
+
 .ham1 .top {
   stroke-dasharray: 40 139;
 }
+
 .ham1 .bottom {
   stroke-dasharray: 40 180;
 }
+
 .ham1.active .top {
   stroke-dashoffset: -98px;
 }
+
 .ham1.active .bottom {
   stroke-dashoffset: -138px;
 }
@@ -79,15 +90,22 @@ html {
     --primary: #7197ef;
     --secondary: #0e1325;
     --accent: #00bfff;
-    --color-svg-fill: #000000; /* Couleur pour le thème clair */
+    --color-svg-fill: #000000;
+    /* Couleur pour le thème clair */
   }
+
   .dark {
     --text: #e7ebf3;
     --background: #070a0e;
     --primary: #10368e;
     --secondary: #0e1325;
     --accent: #00bfff;
-    --color-svg-fill: #ffffff; /* Couleur pour le thème sombre */
+    --color-svg-fill: #ffffff;
+    /* Couleur pour le thème sombre */
+  }
+
+  .section {
+    padding: 0;
   }
 
   .gradient-background-dark {
@@ -107,7 +125,7 @@ html {
       rgba(0, 0, 0, 1) 0%,
       rgba(16, 54, 142, 0.8) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#10368e",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#10368e", GradientType=1);
   }
 
   .gradient-background-light {
@@ -130,7 +148,7 @@ html {
       rgba(129, 223, 255, 0.5) 50%,
       rgba(0, 191, 255, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f4f8",endColorstr="#00bfff",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f4f8", endColorstr="#00bfff", GradientType=1);
   }
 
   .gradient-nav-light {
@@ -169,7 +187,7 @@ html {
       rgba(13, 43, 114, 1) 0%,
       rgba(13, 43, 114, 0) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2b72",endColorstr="#0d2b72",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2b72", endColorstr="#0d2b72", GradientType=1);
   }
 
   .gradient-background-footer-light {
@@ -192,7 +210,7 @@ html {
       rgba(129, 223, 255, 0.5) 15%,
       rgba(0, 191, 255, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f4f8",endColorstr="#00bfff",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f4f8", endColorstr="#00bfff", GradientType=1);
   }
 
   .gradient-card-dark {
@@ -212,7 +230,27 @@ html {
       rgba(16, 54, 142, 1) 0%,
       rgba(16, 54, 142, 0) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10368e",endColorstr="#10368e",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10368e", endColorstr="#10368e", GradientType=1);
+  }
+
+  .gradient-card-dark-right {
+    background: rgb(16, 54, 142);
+    background: -moz-linear-gradient(
+      270deg,
+      rgba(16, 54, 142, 1) 0%,
+      rgba(16, 54, 142, 0) 100%
+    );
+    background: -webkit-linear-gradient(
+      270deg,
+      rgba(16, 54, 142, 1) 0%,
+      rgba(16, 54, 142, 0) 100%
+    );
+    background: linear-gradient(
+      270deg,
+      rgba(16, 54, 142, 1) 0%,
+      rgba(16, 54, 142, 0) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#10368e", endColorstr="#10368e", GradientType=1);
   }
 
   .gradient-card-light {
@@ -232,15 +270,17 @@ html {
       rgba(0, 191, 255, 1) 0%,
       rgba(113, 151, 239, 1) 100%
     );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bfff",endColorstr="#7197ef",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bfff", endColorstr="#7197ef", GradientType=1);
   }
 }
 
 .menu-background {
   position: absolute;
   height: 75%;
-  background-color: var(--accent); /* Couleur de l'accent */
+  background-color: var(--accent);
+  /* Couleur de l'accent */
   transition: left 0.5s ease, width 0.5s ease;
-  border-radius: 30px; /* équivalent de rounded-[60px] en Tailwind */
+  border-radius: 30px;
+  /* équivalent de rounded-[60px] en Tailwind */
   z-index: 1;
 }
