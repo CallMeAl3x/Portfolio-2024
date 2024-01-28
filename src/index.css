@@ -23,6 +23,10 @@ body {
   font-family: Syne;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .ham {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -230,4 +234,13 @@ body {
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bfff",endColorstr="#7197ef",GradientType=1);
   }
+}
+
+.menu-background {
+  position: absolute;
+  height: 75%;
+  background-color: var(--accent); /* Couleur de l'accent */
+  transition: left 0.5s ease, width 0.5s ease;
+  border-radius: 30px; /* équivalent de rounded-[60px] en Tailwind */
+  z-index: 1;
 }

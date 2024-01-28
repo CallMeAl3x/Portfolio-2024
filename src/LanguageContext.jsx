@@ -8,7 +8,6 @@ export const useLanguage = () => useContext(LanguageContext);
 // eslint-disable-next-line react/prop-types
 export const LanguageProvider = ({ children }) => {
   const [locale, setLocale] = useState(navigator.language.split(/[-_]/)[0]); // Langue par défaut
-  console.log(locale);
 
   return (
     <LanguageContext.Provider value={{ locale, setLocale }}>

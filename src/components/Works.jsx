@@ -3,7 +3,7 @@ import weatherapp from "/weatherapp.png";
 
 const Works = () => {
   return (
-    <main className="mx-8 lg:mx-0 mt-12 lg:mt-32 work part">
+    <main className="mx-8 lg:mx-0 mt-12 lg:mt-32 work part" id="works">
       <div className="card component flex lg:flex-row flex-col justify-center w-full gap-8 lg:gap-24">
         <div className="relative dark:gradient-card-dark gradient-card-light  rounded-xl flex lg:flex-row flex-col card info text-center lg:text-left">
           <div className="lg:text-[73px] text-[32px] text-text lg:p-8 p-4 ml-4">

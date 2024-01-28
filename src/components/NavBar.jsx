@@ -1,5 +1,5 @@
 // Navbar.js
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { DarkModeContext } from "../DarkModeContext";
 import { useLanguage } from "../LanguageContext";
 import sun_active from "/sun_active.svg";
@@ -8,6 +8,72 @@ import moon_active from "/moon_active.svg";
 import moon_inactive from "/moon_inactive.svg";
 
 const Navbar = () => {
+  const [activeSection, setActiveSection] = useState(null);
+  const [backgroundStyle, setBackgroundStyle] = useState({
+    left: "24px",
+    width: "96px",
+  });
+  // Au début mettre le background sur le premier élément
+  const [lastActiveSection, setLastActiveSection] = useState(null);
+
+  useEffect(() => {
+    const updateBackgroundStyle = () => {
+      // Recherche de l'élément actif dans la liste (avec la classe "active")
+      const activeElement = document.querySelector("ul .active");
+      if (activeElement) {
+        // Mise à jour du style du fond en fonction de la position et de la largeur de l'élément actif
+        setBackgroundStyle({
+          left: `${activeElement.offsetLeft}px`,
+          width: `96px`,
+        });
+      }
+    };
+
+    updateBackgroundStyle();
+  }, [activeSection]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.pageYOffset;
+      let newActiveSection = "Home";
+      const scrollSectionMap = {
+        0: "Home",
+        500: "Works",
+        1000: "About",
+        1500: "Contact",
+      };
+
+      for (const scrollY in scrollSectionMap) {
+        if (currentScrollY >= scrollY) {
+          newActiveSection = scrollSectionMap[scrollY];
+        } else {
+          break; // Sortir de la boucle dès que la première correspondance est trouvée
+        }
+      }
+
+      if (newActiveSection !== activeSection) {
+        setLastActiveSection(activeSection);
+        setActiveSection(newActiveSection);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [activeSection]);
+
+  const getAnimationClass = (section) => {
+    const sections = ["Home", "Works", "About", "Contact"];
+    const currentIndex = sections.indexOf(section);
+    const lastIndex = sections.indexOf(lastActiveSection);
+
+    if (currentIndex > lastIndex) {
+      return "animate-slide-right";
+    } else {
+      return "animate-slide-left";
+    }
+  };
+
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
   const { setLocale, locale } = useLanguage();
@@ -20,7 +86,6 @@ const Navbar = () => {
   const handleLangageToggleEN = () => {
     setLocale("en");
     handleHamburgerToggle();
-    console.log(setLocale);
   };
 
   const handleDarkModeToggle = () => {
@@ -29,7 +94,6 @@ const Navbar = () => {
 
   const handleHamburgerToggle = () => {
     setIsOpen(!isOpen);
-    console.log(isOpen);
   };
 
   return (
@@ -122,7 +186,7 @@ const Navbar = () => {
           </div>
         </ul>
       </nav>
-      <div className="header-container flex justify-center items-center fixed top-6 left-0 right-0 gap-36 max-lg:hidden z-10">
+      <div className="header-container flex justify-center items-center fixed top-6 left-0 right-0 gap-36 max-lg:hidden z-10 animate__animated animate__slideInDown">
         <div className="flex gap-4 language-switcher text-xl font-bold">
           <button
             onClick={handleLangageToggleEN}
@@ -136,20 +200,27 @@ const Navbar = () => {
           </button>
         </div>
 
-        <nav className="navpc p-4 text-[#e7ebf3] dark:text-text">
-          <ul className="flex gap-16 bg-secondary border-solid border-[#404040]/5 box-shadow-nav rounded-[60px] w-fit justify-center items-center py-2 px-6 text-xl">
-            <li className="h-12 w-24 flex justify-center items-center rounded-[60px]">
-              <a href="#Home">Home</a>
-            </li>
-            <li className="h-12 w-24 flex justify-center items-center rounded-[60px]">
-              <a href="#About">About</a>
-            </li>
-            <li className="h-12 w-24 flex justify-center items-center rounded-[60px]">
-              <a href="#Works">Works</a>
-            </li>
-            <li className="h-12 w-24 flex justify-center items-center rounded-[60px] bg-accent">
-              <a href="#Contact">Contact</a>
-            </li>
+        <nav className="navpc p-4 text-[#e7ebf3] dark:text-text animate__animated animate__slideInDown">
+          <ul className="relative flex gap-16 bg-secondary border-solid border-[#404040]/5 box-shadow-nav rounded-[60px] w-fit justify-center items-center py-2 px-6 text-xl">
+            <div className="menu-background" style={backgroundStyle}></div>
+            {[
+              ["Home", "#home"],
+              ["Works", "#works"],
+              ["About", "#About"],
+              ["Contact", "#Contact"],
+            ].map(([text, href]) => (
+              <li
+                key={text}
+                className={`h-12 w-24 flex justify-center items-center rounded-[60px] relative overflow-hidden ${
+                  activeSection === text
+                    ? "active " + getAnimationClass(text)
+                    : ""
+                }`}>
+                <a className="z-[2]" href={href}>
+                  {text}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
 

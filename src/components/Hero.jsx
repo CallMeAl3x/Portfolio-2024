@@ -1,6 +1,8 @@
 const Hero = () => {
   return (
-    <main className="h-screen w-full dark:gradient-background-dark gradient-background-light flex text-text flex-col rounded-b-[86px]">
+    <main
+      className="h-screen w-full dark:gradient-background-dark gradient-background-light flex text-text flex-col rounded-b-[86px]"
+      id="home">
       <div className="lg:ml-12 lg:mt-[36.5vh] mt-52 text-center lg:text-left font-semibold">
         <h1 className="lg:text-[94px] text-[40px] lg:text-left">
           Portfolio 2024
