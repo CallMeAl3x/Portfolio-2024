@@ -18,11 +18,23 @@ const Works = () => {
             <span className="text-background dark:text-accent font-bold">
               <FormattedMessage id="card_green1" />
             </span>
-            <div className="flex lg:justify-between justify-center w-full mt-4">
+            <div className="flex flex-col lg:justify-between justify-center w-full mt-4">
               <p className="text-base text-center lg:text-left max-w-[400px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+
+              <div className="flex text-base gap-4 mt-7 font-semibol">
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  TailwindCSS
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  Fetch API
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  React
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-24 lg:pr-12 justify-evenly items-center">
@@ -84,11 +96,23 @@ const Works = () => {
             <span className="text-background dark:text-accent font-bold">
               <FormattedMessage id="card_green2" />
             </span>
-            <div className="flex lg:justify-end w-full mt-24">
+            <div className="flex flex-col lg:justify-end lg:items-end mt-16">
               <p className="text-base text-center lg:text-right max-w-[400px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+
+              <div className="flex justify-end text-base gap-4 mt-8 pb-3.5 font-semibol">
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  TailwindCSS
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  React
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  TinderCard
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-8 lg:pr-12 justify-evenly items-center">
@@ -150,11 +174,23 @@ const Works = () => {
             <span className="text-background dark:text-accent font-bold">
               <FormattedMessage id="card_green3" />
             </span>
-            <div className="flex lg:justify-between justify-center w-full mt-4">
+            <div className="flex flex-col lg:justify-between justify-center w-full mt-4">
               <p className="text-base text-center lg:text-left max-w-[400px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+
+              <div className="flex text-base gap-4 mt-7 font-semibol">
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  TailwindCSS
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  Fetch API
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  React
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-24 lg:pr-12 justify-evenly items-center">
@@ -216,11 +252,25 @@ const Works = () => {
             <span className="text-background dark:text-accent font-bold">
               <FormattedMessage id="card_green4" />
             </span>
-            <div className="flex lg:justify-end w-full mt-24">
+            <div className="flex flex-col lg:justify-end items-end mt-16">
               <p className="text-base text-center lg:text-right max-w-[400px]">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
+              <div className="flex justify-end text-base gap-4 mt-8 pb-3.5 font-semibol">
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  TailwindCSS
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  React
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  ResponsiveVoice
+                </button>
+                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                  Mymemory
+                </button>
+              </div>
             </div>
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-8 lg:pr-12 justify-evenly items-center">

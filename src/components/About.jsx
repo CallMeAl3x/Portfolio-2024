@@ -7,7 +7,7 @@ const About = () => {
         <img
           src={man}
           alt="Man"
-          className="w-full lg:w-1/2 z-10"
+          className="w-full lg:w-1/2 z-[3]"
           draggable={false}
         />
         <div className="w-full lg:w-1/2 p-4 lg:p-8">

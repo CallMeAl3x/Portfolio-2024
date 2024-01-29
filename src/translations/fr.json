@@ -1,14 +1,16 @@
 {
-  "message": "Ceci est un message test",
   "card_description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "card_title1": "Weather",
   "card_green1": "Site",
+
   "card_description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "card_title2": "Web",
   "card_green2": "Documentaire",
+
   "card_description3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "card_title3": "Data",
   "card_green3": "Visualisation",
+
   "card_description4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   "card_title4": "Translate",
   "card_green4": "App"
