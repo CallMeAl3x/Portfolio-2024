@@ -23,8 +23,8 @@ const Works = () => {
                 <FormattedMessage id="card_description1" />
               </p>
 
-              <div className="flex text-base gap-4 mt-7 font-semibold">
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+              <div className="flex text-base gap-4 mt-7 font-semibold lg:justify-start justify-center lg:flex-row flex-col">
+                <button className="py-2 px-0 bg-[#D7D7D7]/65 font-semibold lg:px-3 rounded-[25px]">
                   TailwindCSS
                 </button>
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
@@ -105,7 +105,7 @@ const Works = () => {
                 <FormattedMessage id="card_description2" />
               </p>
 
-              <div className="flex justify-end text-base gap-4 mt-8 pb-3.5 font-semibol">
+              <div className="flex text-base gap-4 mt-7 font-semibold justify-center lg:flex-row flex-col">
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
                   TailwindCSS
                 </button>
@@ -187,7 +187,7 @@ const Works = () => {
                 <FormattedMessage id="card_description3" />
               </p>
 
-              <div className="flex text-base gap-4 mt-7 font-semibold justify-center">
+              <div className="flex text-base gap-4 mt-7 font-semibold lg:justify-start justify-center lg:flex-row flex-col">
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
                   TailwindCSS
                 </button>
@@ -268,7 +268,7 @@ const Works = () => {
               <p className="text-base text-center lg:text-right lg:max-w-[567px] w-full whitespace-pre-line ml-auto mr-auto">
                 <FormattedMessage id="card_description4" />
               </p>
-              <div className="flex justify-end text-base gap-4 mt-8 pb-3.5 font-semibol">
+              <div className="flex text-base gap-4 mt-7 font-semibold justify-center lg:flex-row flex-col">
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
                   TailwindCSS
                 </button>

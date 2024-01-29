@@ -11,7 +11,7 @@ const About = () => {
           draggable={false}
         />
         <div className="w-full lg:w-1/2 p-4 lg:p-8">
-          <p className="text-white text-[16px] md:text-[18px] lg:text-[20px]">
+          <p className="text-white text-[16px] md:text-[18px] lg:text-[20px] lg:text-left text-center">
             Lorem ipsum dolor sit amet consectetur. Non diam venenatis enim enim
             nibh adipiscing malesuada ac interdum. Amet pellentesque integer
             pharetra amet gravida maecenas eget lacus nulla. Congue pharetra
