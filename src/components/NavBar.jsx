@@ -35,14 +35,24 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.pageYOffset;
-      console.log(currentScrollY);
       let newActiveSection = "Home";
-      const scrollSectionMap = {
-        0: "Home",
-        830: "Works",
-        2800: "About",
-        3500: "Contact",
-      };
+      let scrollSectionMap;
+
+      if (window.innerWidth >= 768) {
+        scrollSectionMap = {
+          0: "Home",
+          830: "Works",
+          3500: "About",
+          4300: "Contact",
+        };
+      } else {
+        scrollSectionMap = {
+          0: "Home",
+          900: "Works",
+          5800: "About",
+          6400: "Contact",
+        };
+      }
 
       for (const scrollY in scrollSectionMap) {
         if (currentScrollY >= scrollY) {
@@ -93,13 +103,24 @@ const Navbar = () => {
     setDarkMode(!darkMode);
   };
 
-  const handleHamburgerToggle = () => {
-    if (window.innerWidth <= 768) {
-      setIsOpen(!isOpen);
-      if (isOpen) document.body.style.overflow = "auto";
-      else {
-        document.body.style.overflow = "hidden";
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024 && isOpen) {
+        setIsOpen(false);
+        document.body.style.overflow = "auto";
       }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Nettoyage : Supprime l'écouteur d'événements lors du démontage du composant
+    return () => window.removeEventListener("resize", handleResize);
+  }, [isOpen]); // Ajoute isOpen comme dépendance pour que le useEffect se mette à jour avec son état
+
+  const handleHamburgerToggle = () => {
+    if (window.innerWidth <= 1024) {
+      setIsOpen(!isOpen);
+      document.body.style.overflow = !isOpen ? "hidden" : "auto";
     }
   };
 
@@ -157,7 +178,7 @@ const Navbar = () => {
         className={`lg:hidden fixed top-0 left-0 h-screen w-screen transform gradient-nav-light dark:gradient-nav-dark box-shadow-nav z-10 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-500 ease-in-out`}>
-        <ul className="flex flex-col items-center justify-center h-full w-full py-2 px-6 gap-16">
+        <ul className="flex flex-col items-center justify-center text-2xl font-semibold h-full w-full py-2 px-6 gap-16">
           {[
             ["Home", "#home"],
             ["Works", "#works"],
@@ -188,15 +209,19 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="header-container flex justify-center items-center fixed top-6 left-0 right-0 gap-36 max-lg:hidden z-10 animate__animated animate__slideInDown">
-        <div className="flex gap-4 language-switcher text-xl font-bold">
+        <div className="flex gap-4 language-switcher text-xl font-bold bg-secondary rounded-xl p-2">
           <button
             onClick={handleLangageToggleEN}
-            className={`${locale === "en" ? "text-accent" : "text-text"}`}>
+            className={`${
+              locale === "en" ? "text-accent" : "text-background dark:text-text"
+            }`}>
             EN
           </button>
           <button
             onClick={handleLangageToggleFR}
-            className={`${locale === "fr" ? "text-accent" : "text-text"}`}>
+            className={`${
+              locale === "fr" ? "text-accent" : "text-background dark:text-text"
+            }`}>
             FR
           </button>
         </div>

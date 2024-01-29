@@ -3,13 +3,17 @@ import weatherapp from "/weatherapp.png";
 import webdocumentary from "/webdocumentary.png";
 import datavisualisation from "/datavisualisation.png";
 import translateapp from "/translateapp.png";
+import "../index.css";
 
 const Works = () => {
   return (
     <main
       className="mx-8 section lg:mx-0 mt-20 lg:mt-32 work part flex flex-col gap-24"
       id="works">
-      <div className="card component flex lg:flex-row mt-20 flex-col justify-center w-full gap-8 lg:gap-24">
+      <h3 className="text-[60px] mt-20 font-[Monrope] font-semibold bg-gradient-title bg-clip-text text-center gradient-text lg:mt-48 ">
+        Works
+      </h3>
+      <div className="card component flex lg:flex-row lg:mt-20 flex-col justify-center w-full gap-8 lg:gap-24">
         <div className="relative dark:gradient-card-dark gradient-card-light  rounded-xl flex lg:flex-row flex-col card info text-center lg:text-left">
           <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 ml-4">
             <h4 className="font-bold">
@@ -23,16 +27,20 @@ const Works = () => {
                 <FormattedMessage id="card_description1" />
               </p>
 
-              <div className="flex text-base gap-4 mt-7 font-semibold lg:justify-start justify-center lg:flex-row flex-col">
-                <button className="py-2 px-0 bg-[#D7D7D7]/65 font-semibold lg:px-3 rounded-[25px]">
-                  TailwindCSS
-                </button>
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  Fetch API
-                </button>
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  React
-                </button>
+              <div className="flex text-base mt-7 font-semibold lg:justify-start md:items-center gap-4 justify-center lg:flex-row flex-col">
+                <div className="flex flex-col md:flex-row gap-4">
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    TailwindCSS
+                  </button>
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    Fetch API
+                  </button>
+                </div>
+                <div className="flex justify-center">
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    React
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -93,7 +101,7 @@ const Works = () => {
 
       <div className="card component mt-20 flex lg:flex-row-reverse flex-col justify-center w-full gap-8 lg:gap-24">
         <div className="relative dark:gradient-card-dark-right gradient-card-light pr-4 rounded-xl flex lg:flex-row-reverse flex-col card info text-center lg:text-left">
-          <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 ml-4 flex-col flex justify-center lg:justify-start items-center lg:items-end lg:mt-0 mt-4">
+          <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 lg:ml-4 flex-col flex justify-center lg:justify-start items-center lg:items-end lg:mt-0 mt-4">
             <h4 className="font-bold text-end">
               <FormattedMessage id="card_title2" />
             </h4>
@@ -105,16 +113,20 @@ const Works = () => {
                 <FormattedMessage id="card_description2" />
               </p>
 
-              <div className="flex text-base gap-4 mt-7 font-semibold justify-center lg:flex-row flex-col">
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  TailwindCSS
-                </button>
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  React
-                </button>
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  TinderCard
-                </button>
+              <div className="flex text-base mt-7 font-semibold lg:justify-start md:items-center gap-4 justify-center lg:flex-row flex-col">
+                <div className="flex flex-col md:flex-row gap-4">
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    TailwindCSS
+                  </button>
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    Fetch API
+                  </button>
+                </div>
+                <div className="flex justify-center">
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    TinderCard
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -175,7 +187,7 @@ const Works = () => {
 
       <div className="card component flex lg:flex-row mt-20 flex-col justify-center w-full gap-8 lg:gap-24">
         <div className="relative dark:gradient-card-dark gradient-card-light  rounded-xl flex lg:flex-row flex-col card info text-center lg:text-left">
-          <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 ml-4">
+          <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 lg:ml-4">
             <h4 className="font-bold">
               <FormattedMessage id="card_title3" />
             </h4>
@@ -187,16 +199,20 @@ const Works = () => {
                 <FormattedMessage id="card_description3" />
               </p>
 
-              <div className="flex text-base gap-4 mt-7 font-semibold lg:justify-start justify-center lg:flex-row flex-col">
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  TailwindCSS
-                </button>
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  Fetch API
-                </button>
-                <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
-                  React
-                </button>
+              <div className="flex text-base mt-7 font-semibold lg:justify-start md:items-center gap-4 justify-center lg:flex-row flex-col">
+                <div className="flex flex-col md:flex-row gap-4">
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    TailwindCSS
+                  </button>
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    Fetch API
+                  </button>
+                </div>
+                <div className="flex justify-center">
+                  <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
+                    React
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -209,7 +225,7 @@ const Works = () => {
                 width="60"
                 height="60"
                 viewBox="0 0 60 60"
-                fill="none"
+                fill="var(--color-svg-fill)"
                 className="lg:h-[60px] lg:w-[60px] w-fit h-fit"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -257,18 +273,18 @@ const Works = () => {
 
       <div className="card component mt-20 flex lg:flex-row-reverse flex-col justify-center w-full gap-8 lg:gap-52">
         <div className="relative dark:gradient-card-dark-right gradient-card-light pr-4 rounded-xl flex lg:flex-row-reverse flex-col card info text-center lg:text-left">
-          <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 ml-4 flex-col flex justify-center lg:justify-start items-center lg:items-end lg:mt-0 mt-4">
+          <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 lg:ml-4 flex-col flex justify-center lg:justify-start items-center lg:items-end lg:mt-0 mt-4">
             <h4 className="font-bold text-end">
               <FormattedMessage id="card_title4" />
             </h4>
             <span className="text-background dark:text-accent font-bold">
               <FormattedMessage id="card_green4" />
             </span>
-            <div className="flex flex-col lg:justify-end items-end mt-16">
+            <div className="flex flex-col lg:justify-end lg:items-end items-center mt-16">
               <p className="text-base text-center lg:text-right lg:max-w-[567px] w-full whitespace-pre-line ml-auto mr-auto">
                 <FormattedMessage id="card_description4" />
               </p>
-              <div className="flex text-base gap-4 mt-7 font-semibold justify-center lg:flex-row flex-col">
+              <div className="flex text-base gap-4 mt-7 font-semibold justify-center lg:flex lg:flex-row flex-col md:grid md:grid-cols-2">
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
                   TailwindCSS
                 </button>

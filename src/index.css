@@ -9,6 +9,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Monrope;
+  src: url("../src/fonts/Manrope/Manrope-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: Medium;
+  font-style: normal;
+}
+
 * {
   @apply transition-colors duration-200;
 }
@@ -90,7 +98,8 @@ html {
     --primary: #7197ef;
     --secondary: #0e1325;
     --accent: #00bfff;
-    --color-svg-fill: #000000;
+    --color-svg-fill: #f1f4f8;
+    --color-svg-fill-black: #0c1018;
     /* Couleur pour le thème clair */
   }
 
@@ -100,12 +109,15 @@ html {
     --primary: #10368e;
     --secondary: #0e1325;
     --accent: #00bfff;
-    --color-svg-fill: #ffffff;
+    --color-svg-fill: #e7ebf3;
+    --color-svg-fill-black: #e7ebf3;
     /* Couleur pour le thème sombre */
   }
 
-  .section {
-    padding: 0;
+  .gradient-text {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .gradient-background-dark {
@@ -272,8 +284,32 @@ html {
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00bfff", endColorstr="#7197ef", GradientType=1);
   }
-}
 
+  .gradient-work-title-dark {
+    background: #004dff;
+    background: -webkit-linear-gradient(
+      to bottom,
+      #004dff 0%,
+      #002477 80%,
+      #000000 100%
+    );
+    background: -moz-linear-gradient(
+      to bottom,
+      #004dff 0%,
+      #002477 80%,
+      #000000 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      #004dff 0%,
+      #002477 80%,
+      #000000 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .menu-background {
   position: absolute;
   height: 75%;
