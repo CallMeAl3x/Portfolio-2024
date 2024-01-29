@@ -38,7 +38,7 @@ const Works = () => {
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-24 lg:pr-12 justify-evenly items-center">
             <a
-              href="https://github.com/CallMeAl3x"
+              href="https://github.com/CallMeAl3x/Weather"
               target="_blank"
               rel="noreferrer">
               <svg
@@ -78,11 +78,16 @@ const Works = () => {
         </div>
 
         <div className="flex items-center justify-center h-full">
-          <img
-            src={weatherapp}
-            className="lg:max-w-none h-full w-auto"
-            alt=""
-          />
+          <a
+            href="https://weather-app-b-alexandre.netlify.app"
+            target="_blank"
+            rel="noreferrer">
+            <img
+              src={weatherapp}
+              className="lg:max-w-none h-full w-auto"
+              alt=""
+            />
+          </a>
         </div>
       </div>
 
@@ -115,7 +120,7 @@ const Works = () => {
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-8 lg:pr-12 justify-evenly items-center">
             <a
-              href="https://github.com/CallMeAl3x"
+              href="https://github.com/CallMeAl3x/Sae308"
               target="_blank"
               rel="noreferrer">
               <svg
@@ -133,7 +138,7 @@ const Works = () => {
             </a>
             <button className="flex justify-center items-center dark:bg-accent bg-text rounded-full h-12 w-12  lg:rotate-180">
               <a
-                href="https://weather-app-b-alexandre.netlify.app"
+                href="https://webdoc-dating-app.netlify.app"
                 target="_blank"
                 rel="noreferrer">
                 <svg
@@ -155,11 +160,16 @@ const Works = () => {
         </div>
 
         <div className="flex items-center justify-center h-full">
-          <img
-            src={webdocumentary}
-            className="lg:max-w-none h-full w-auto"
-            alt=""
-          />
+          <a
+            href="https://webdoc-dating-app.netlify.app"
+            target="_blank"
+            rel="noreferrer">
+            <img
+              src={webdocumentary}
+              className="lg:max-w-none h-full w-auto"
+              alt=""
+            />
+          </a>
         </div>
       </div>
 
@@ -192,7 +202,7 @@ const Works = () => {
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-12 lg:pr-12 justify-evenly items-center">
             <a
-              href="https://github.com/CallMeAl3x"
+              href="https://github.com/CallMeAl3x/chartjs"
               target="_blank"
               rel="noreferrer">
               <svg
@@ -210,7 +220,7 @@ const Works = () => {
             </a>
             <button className="flex justify-center items-center dark:bg-accent bg-text rounded-full h-12 w-12">
               <a
-                href="https://weather-app-b-alexandre.netlify.app"
+                href="https://datavisualisation-cinema.netlify.app/"
                 target="_blank"
                 rel="noreferrer">
                 <svg
@@ -232,11 +242,16 @@ const Works = () => {
         </div>
 
         <div className="flex items-center justify-center h-full">
-          <img
-            src={datavisualisation}
-            className="lg:max-w-none h-full w-auto"
-            alt=""
-          />
+          <a
+            href="https://datavisualisation-cinema.netlify.app/"
+            target="_blank"
+            rel="noreferrer">
+            <img
+              src={datavisualisation}
+              className="lg:max-w-none h-full w-auto"
+              alt=""
+            />
+          </a>
         </div>
       </div>
 
@@ -271,7 +286,7 @@ const Works = () => {
           </div>
           <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-8 lg:pr-12 justify-evenly items-center">
             <a
-              href="https://github.com/CallMeAl3x"
+              href="https://github.com/CallMeAl3x/Translate-App"
               target="_blank"
               rel="noreferrer">
               <svg
@@ -289,7 +304,7 @@ const Works = () => {
             </a>
             <button className="flex justify-center items-center dark:bg-accent bg-text rounded-full h-12 w-12  lg:rotate-180">
               <a
-                href="https://weather-app-b-alexandre.netlify.app"
+                href="https://translate-b-alexandre.netlify.app"
                 target="_blank"
                 rel="noreferrer">
                 <svg
@@ -311,11 +326,16 @@ const Works = () => {
         </div>
 
         <div className="flex items-center justify-center h-full">
-          <img
-            src={translateapp}
-            className="lg:max-w-none h-full w-auto"
-            alt=""
-          />
+          <a
+            href="https://translate-b-alexandre.netlify.app"
+            target="_blank"
+            rel="noreferrer">
+            <img
+              src={translateapp}
+              className="lg:max-w-none h-full w-auto"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </main>
