@@ -1,17 +1,17 @@
 {
-  "card_description1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "card_description1": "Weather App est un site. Il permet aux utilisateurs de voir la météo actuelle et les prévisions à venir dans la ville de votre choix.\nJ'ai utilisé Vite, TailwindCSS ainsi que Fetch API pour le construire. \nLe design m'a été donné par DevChallenges",
   "card_title1": "Weather",
-  "card_green1": "Site",
+  "card_green1": "App",
 
-  "card_description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "card_description2": "Ce webdocumentaire, projet de deuxième année en BUT MMI (S3), explore les applications de rencontres avec un focus sur les expériences masculines. Il révèle les enjeux de ces plateformes, alliant interactivité et crédibilité. \nRéalisé avec React, TailwindCSS, TinderCard, et React Context.",
   "card_title2": "Web",
   "card_green2": "Documentaire",
 
-  "card_description3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "card_description3": "Projet de deuxième année en BUT MMI (S3), ce site offre une analyse des données cinématographiques via des APIs, affichant les informations à travers deux graphiques. Il a été développé avec les technologies Vite, TailwindCSS, ChartJS et Zustand.",
   "card_title3": "Data",
   "card_green3": "Visualisation",
 
-  "card_description4": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "card_description4": "Ce site web permet de traduire jusqu'à 500 caractères en différentes langues, d'écouter et de copier les textes, y compris en anglais et en français. \nRéalisé avec Vite, TailwindCSS, API fetch, ResponsiveVoice et Mymemory. \nLe design a été fourni par Dev Challenges.",
   "card_title4": "Translate",
   "card_green4": "App"
 }

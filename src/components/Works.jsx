@@ -19,12 +19,11 @@ const Works = () => {
               <FormattedMessage id="card_green1" />
             </span>
             <div className="flex flex-col lg:justify-between justify-center w-full mt-4">
-              <p className="text-base text-center lg:text-left max-w-[400px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p className="text-base text-center lg:text-left lg:max-w-[550px] w-full whitespace-pre-line ml-auto mr-auto">
+                <FormattedMessage id="card_description1" />
               </p>
 
-              <div className="flex text-base gap-4 mt-7 font-semibol">
+              <div className="flex text-base gap-4 mt-7 font-semibold">
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
                   TailwindCSS
                 </button>
@@ -96,10 +95,9 @@ const Works = () => {
             <span className="text-background dark:text-accent font-bold">
               <FormattedMessage id="card_green2" />
             </span>
-            <div className="flex flex-col lg:justify-end lg:items-end mt-16">
-              <p className="text-base text-center lg:text-right max-w-[400px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <div className="flex flex-col lg:justify-end lg:items-end mt-6">
+              <p className="text-base text-center lg:text-right lg:max-w-[550px] w-full whitespace-pre-line ml-auto mr-auto">
+                <FormattedMessage id="card_description2" />
               </p>
 
               <div className="flex justify-end text-base gap-4 mt-8 pb-3.5 font-semibol">
@@ -175,12 +173,11 @@ const Works = () => {
               <FormattedMessage id="card_green3" />
             </span>
             <div className="flex flex-col lg:justify-between justify-center w-full mt-4">
-              <p className="text-base text-center lg:text-left max-w-[400px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p className="text-base text-center lg:text-left lg:max-w-[550px] w-full whitespace-pre-line ml-auto mr-auto">
+                <FormattedMessage id="card_description3" />
               </p>
 
-              <div className="flex text-base gap-4 mt-7 font-semibol">
+              <div className="flex text-base gap-4 mt-7 font-semibold justify-center">
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">
                   TailwindCSS
                 </button>
@@ -193,7 +190,7 @@ const Works = () => {
               </div>
             </div>
           </div>
-          <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-24 lg:pr-12 justify-evenly items-center">
+          <div className="flex lg:flex-col lg:justify-between mt-6 mb-10 lg:ml-12 lg:pr-12 justify-evenly items-center">
             <a
               href="https://github.com/CallMeAl3x"
               target="_blank"
@@ -243,7 +240,7 @@ const Works = () => {
         </div>
       </div>
 
-      <div className="card component mt-20 flex lg:flex-row-reverse flex-col justify-center w-full gap-8 lg:gap-60">
+      <div className="card component mt-20 flex lg:flex-row-reverse flex-col justify-center w-full gap-8 lg:gap-52">
         <div className="relative dark:gradient-card-dark-right gradient-card-light pr-4 rounded-xl flex lg:flex-row-reverse flex-col card info text-center lg:text-left">
           <div className="lg:text-[55px] text-[32px] text-text lg:p-8 p-4 ml-4 flex-col flex justify-center lg:justify-start items-center lg:items-end lg:mt-0 mt-4">
             <h4 className="font-bold text-end">
@@ -253,9 +250,8 @@ const Works = () => {
               <FormattedMessage id="card_green4" />
             </span>
             <div className="flex flex-col lg:justify-end items-end mt-16">
-              <p className="text-base text-center lg:text-right max-w-[400px]">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              <p className="text-base text-center lg:text-right lg:max-w-[567px] w-full whitespace-pre-line ml-auto mr-auto">
+                <FormattedMessage id="card_description4" />
               </p>
               <div className="flex justify-end text-base gap-4 mt-8 pb-3.5 font-semibol">
                 <button className="py-2 bg-[#D7D7D7]/65 font-semibold px-3 rounded-[25px]">

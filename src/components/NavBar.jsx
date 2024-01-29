@@ -94,10 +94,12 @@ const Navbar = () => {
   };
 
   const handleHamburgerToggle = () => {
-    setIsOpen(!isOpen);
-    if (isOpen) document.body.style.overflow = "auto";
-    else {
-      document.body.style.overflow = "hidden";
+    if (window.innerWidth <= 768) {
+      setIsOpen(!isOpen);
+      if (isOpen) document.body.style.overflow = "auto";
+      else {
+        document.body.style.overflow = "hidden";
+      }
     }
   };
 
