@@ -1,26 +1,31 @@
+import { FormattedMessage } from "react-intl";
+
 const Hero = () => {
   return (
     <main
-      className="h-[99.4lvh] section w-full dark:gradient-background-dark gradient-background-light flex text-text flex-col rounded-b-[86px]"
-      id="home">
-      <div className="lg:ml-12 lg:mt-[20.5vh] mt-32 text-center lg:text-left font-semibold flex lg:flex-row flex-col items-center">
-        <div className="flex flex-col w-full lg:w-[60%]">
-          <h2 className="lg:text-[74px] md:text-[50px] text-[26px]">Bonefons Alexandre</h2>
-          <h1 className="lg:text-[74px] md:text-[50px] text-[26px] lg:text-left">
-            Web Developer
+      className="section dark:gradient-background-dark gradient-background-light flex h-[64lvh] w-full flex-col rounded-b-[86px] px-1.5 text-text sm:h-[84lvh] sm:px-0 lg:h-[99.6lvh]"
+      id="home"
+    >
+      <div className="flex h-full flex-col items-center justify-center text-center font-semibold md:mt-0 lg:mt-0 xl:flex-row xl:items-center xl:justify-center xl:text-left">
+        <div className="flex w-full flex-col xl:w-[60%]">
+          <h2 className="text-[30px] sm:text-[50px] lg:text-[74px]">
+            Bonefons Alexandre
+          </h2>
+          <h1 className="text-[30px] sm:text-[50px] lg:text-[74px] xl:text-left">
+            <FormattedMessage id="hero.title" />
           </h1>
         </div>
-        <div className="w-full lg:w-[30%]">
-          <h3 className="lg:text-[40px] md:text-[20px] text-[16px] mt-8 text-center">
-            Développeur web passionné par la création d&apos;expériences
-            utilisateur exceptionnelles.
+        <div className="w-full xl:w-[30%]">
+          <h3 className="mt-12 text-center text-[18px] sm:text-[26px] lg:mt-8 lg:text-[40px]">
+            <FormattedMessage id="hero.description" />
           </h3>
         </div>
       </div>
       <a
         href="#works"
-        className="flex flex-col text mr-auto ml-auto items-center justify-center mt-auto mb-6">
-        <p className="uppercase text-[36px] font-bold">Scroll</p>
+        className="text mb-6 ml-auto mr-auto mt-auto flex flex-col items-center justify-center"
+      >
+        <p className="text-[36px] font-bold uppercase">Scroll</p>
         <svg
           width="42"
           height="75"
@@ -28,7 +33,8 @@ const Hero = () => {
           fill="var(--color-svg-fill-black)"
           alt="ArrowDown"
           className="h-[75px] w-[42px]"
-          xmlns="http://www.w3.org/2000/svg">
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             d="M21 60.9375C19.6935 60.9375 18.667 59.9062 18.667 58.5938V16.4062C18.667 15.0938 19.6935 14.0625 21 14.0625C22.3064 14.0625 23.3329 15.0938 23.3329 16.4062V58.5938C23.3329 59.9062 22.3064 60.9375 21 60.9375Z"
             fill="var(--color-svg-fill-black)"

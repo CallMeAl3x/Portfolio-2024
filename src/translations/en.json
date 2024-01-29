@@ -1,14 +1,19 @@
 {
-  "message": "This is a test message",
+  "hero.description": "Front-end developer passionate about responsive design for an optimal user experience on all screens.",
+  "hero.title": "Web Developer",
+
   "card_description1": "Weather App is a website. It allows users to view the current weather and upcoming forecasts in the city of their choice. \nI used Vite, TailwindCSS, and Fetch API to build it. \nThe design was provided to me by DevChallenges.",
   "card_title1": "Weather",
   "card_green1": "App",
+
   "card_description2": "This web documentary, a second-year project in the DUT MMI (S3), delves into dating apps, focusing on male experiences. It aims to uncover the challenges of these platforms, blending interactivity and credibility. \nDeveloped with React, TailwindCSS, TinderCard, and React Context.",
   "card_title2": "Web",
   "card_green2": "Documentary",
+
   "card_description3": "Second-year project in the DUT MMI (S3), this site provides cinema data analysis through APIs, displaying information via two graphs. \nDeveloped using Vite, TailwindCSS, ChartJS, and Zustand.",
   "card_title3": "Data",
   "card_green3": "Visualisation",
+
   "card_description4": "This website offers translation of up to 500 characters in various languages, along with the ability to listen to and copy the texts, including in English and French. \nBuilt with Vite, TailwindCSS, API fetch, ResponsiveVoice, and Mymemory. \nThe design was provided by Dev Challenges.",
   "card_title4": "Translate",
   "card_green4": "App"

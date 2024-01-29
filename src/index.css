@@ -17,8 +17,14 @@
   font-style: normal;
 }
 
+@layer components {
+  .btn_skills {
+    @apply rounded-[15px] bg-[#00bfff]/65 px-6 py-2 font-semibold;
+  }
+}
+
 * {
-  @apply transition-colors duration-[0.15];
+  @apply transition-colors duration-[50ms];
 }
 
 body {
@@ -59,7 +65,9 @@ html {
 
 .line {
   fill: none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition:
+    stroke-dasharray 400ms,
+    stroke-dashoffset 400ms;
   stroke: #000;
   stroke-width: 5.5;
   stroke-linecap: round;
@@ -310,12 +318,15 @@ html {
     -webkit-text-fill-color: transparent;
   }
 }
+
 .menu-background {
   position: absolute;
   height: 75%;
   background-color: var(--accent);
   /* Couleur de l'accent */
-  transition: left 0.5s ease, width 0.5s ease;
+  transition:
+    left 0.5s ease,
+    width 0.5s ease;
   border-radius: 30px;
   /* équivalent de rounded-[60px] en Tailwind */
   z-index: 1;

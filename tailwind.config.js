@@ -16,6 +16,9 @@ export default {
         "gradient-footer-tittle":
           "linear-gradient(to bottom, #FFFFFF 46%, #0000 100%)",
       },
+      fontSize: {
+        h4: { xl: "3.5rem" },
+      },
     },
   },
   plugins: [],
