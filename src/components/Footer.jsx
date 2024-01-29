@@ -5,7 +5,7 @@ import github from "/github.svg";
 const Footer = () => {
   return (
     <footer
-      className="h-full section dark:gradient-background-footer-dark gradient-background-footer-light rounded-t-[86px] mt-96 pb-24"
+      className="h-full section dark:gradient-background-footer-dark gradient-background-footer-light rounded-t-[86px] mt-96 pb-12 lg:pb-24"
       id="contact">
       <h3 className="lg:text-[70px] mb-44 top-16 relative text-[60px] mt-20 font-[Monrope] font-semibold bg-gradient-footer-tittle text-center gradient-text">
         Contact

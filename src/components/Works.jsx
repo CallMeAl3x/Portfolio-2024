@@ -8,7 +8,7 @@ import "../index.css";
 const Works = () => {
   return (
     <main
-      className="mx-8 section lg:mx-0 mt-20 lg:mt-32 work part flex flex-col gap-24"
+      className="mx-8 section lg:mx-0 mt-32 lg:mt-32 work part flex flex-col gap-24"
       id="works">
       <h3 className="text-[60px] mt-20 font-[Monrope] font-semibold bg-gradient-title bg-clip-text text-center gradient-text lg:mt-48 ">
         Works

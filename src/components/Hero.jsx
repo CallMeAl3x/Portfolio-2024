@@ -5,13 +5,13 @@ const Hero = () => {
       id="home">
       <div className="lg:ml-12 lg:mt-[20.5vh] mt-32 text-center lg:text-left font-semibold flex lg:flex-row flex-col items-center">
         <div className="flex flex-col w-full lg:w-[60%]">
-          <h2 className="lg:text-[84px] text-[26px]">Bonefons Alexandre</h2>
-          <h1 className="lg:text-[84px] text-[26px] lg:text-left">
+          <h2 className="lg:text-[74px] md:text-[50px] text-[26px]">Bonefons Alexandre</h2>
+          <h1 className="lg:text-[74px] md:text-[50px] text-[26px] lg:text-left">
             Web Developer
           </h1>
         </div>
         <div className="w-full lg:w-[30%]">
-          <h3 className="lg:text-[40px] text-[16px] mt-8 text-center">
+          <h3 className="lg:text-[40px] md:text-[20px] text-[16px] mt-8 text-center">
             Développeur web passionné par la création d&apos;expériences
             utilisateur exceptionnelles.
           </h3>

@@ -36,19 +36,20 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.pageYOffset;
       let newActiveSection = "Home";
+      console.log(currentScrollY);
       let scrollSectionMap;
 
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 360) {
         scrollSectionMap = {
           0: "Home",
           830: "Works",
           3500: "About",
           4300: "Contact",
-        };
-      } else {
+        }
+      } else if (window.innerWidth >= 768) {
         scrollSectionMap = {
           0: "Home",
-          900: "Works",
+          800: "Works",
           5800: "About",
           6400: "Contact",
         };
