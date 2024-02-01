@@ -74,7 +74,7 @@ const Works = () => {
 
               <div className="mt-7 flex flex-col justify-center gap-4 text-base font-semibold md:items-center xl:mt-10 xl:flex-row xl:justify-start xl:pb-3">
                 <div className="flex flex-col items-center gap-4 md:flex-row">
-                  <button className="btn_skills">TailwindCSS</button>
+                  <button className="btn_skills">React Context</button>
                   <button className="btn_skills">Fetch API</button>
                 </div>
                 <div className="flex justify-center">
@@ -132,7 +132,7 @@ const Works = () => {
               <div className="mt-7 flex flex-col justify-center gap-4 text-base font-semibold md:items-center xl:mt-10 xl:flex-row-reverse xl:justify-start xl:pb-3">
                 <div className="flex flex-col items-center gap-4 md:flex-row">
                   <button className="btn_skills">TailwindCSS</button>
-                  <button className="btn_skills">Fetch API</button>
+                  <button className="btn_skills">TinderCard</button>
                 </div>
                 <div className="flex justify-center">
                   <button className="btn_skills">React</button>
@@ -188,10 +188,10 @@ const Works = () => {
               <div className="mt-7 flex flex-col justify-center gap-4 text-base font-semibold md:items-center xl:mt-10 xl:flex-row xl:justify-start xl:pb-3">
                 <div className="flex flex-col items-center gap-4 md:flex-row">
                   <button className="btn_skills">TailwindCSS</button>
-                  <button className="btn_skills">Fetch API</button>
+                  <button className="btn_skills">Appels API</button>
                 </div>
                 <div className="flex justify-center">
-                  <button className="btn_skills">React</button>
+                  <button className="btn_skills">ChartJS</button>
                 </div>
               </div>
             </div>
@@ -240,11 +240,11 @@ const Works = () => {
 
               <div className="mt-7 flex flex-col justify-center gap-4 text-base font-semibold md:items-center xl:mt-10 xl:flex-row-reverse xl:justify-start xl:pb-3">
                 <div className="flex flex-col items-center gap-4 md:flex-row">
-                  <button className="btn_skills">TailwindCSS</button>
-                  <button className="btn_skills">Fetch API</button>
+                  <button className="btn_skills">Vite</button>
+                  <button className="btn_skills">ResponsiveVoice API</button>
                 </div>
                 <div className="flex justify-center">
-                  <button className="btn_skills">React</button>
+                  <button className="btn_skills">Mymemory</button>
                 </div>
               </div>
             </div>
