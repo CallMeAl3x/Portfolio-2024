@@ -17,9 +17,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: Inter;
+  src: url("../src/fonts/Inter/Inter-VariableFont_slnt,wght.ttf")
+    format("truetype");
+  font-weight: Medium;
+  font-style: normal;
+}
+
 @layer components {
   .btn_skills {
-    @apply rounded-[15px] bg-[#00bfff]/65 px-6 py-2 font-semibold;
+    @apply w-max rounded-[15px] bg-[#00bfff]/65 px-6 py-2 font-semibold;
   }
 }
 
@@ -31,6 +39,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: Syne;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -330,4 +340,31 @@ html {
   border-radius: 30px;
   /* équivalent de rounded-[60px] en Tailwind */
   z-index: 1;
+}
+
+.rotating-curved-text {
+  -webkit-animation: spin 12.5s linear infinite;
+  -moz-animation: spin 12.5s linear infinite;
+  animation: spin 12.5s linear infinite;
+  position: absolute;
+  left: -32%;
+  top: -31.5%;
+  font-weight: 400;
+  z-index: 1;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

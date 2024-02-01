@@ -44,14 +44,16 @@ const Navbar = () => {
           0: "Home",
           830: "Works",
           3500: "About",
-          4300: "Contact",
+          4300: "Skills",
+          5000: "Contact",
         };
       } else if (window.innerWidth >= 768) {
         scrollSectionMap = {
           0: "Home",
           800: "Works",
           5800: "About",
-          6400: "Contact",
+          6400: "Skills",
+          7400: "Contact",
         };
       }
 
@@ -186,6 +188,7 @@ const Navbar = () => {
             ["Home", "#home"],
             ["Works", "#works"],
             ["About", "#about"],
+            ["Skills", "#skills"],
             ["Contact", "#contact"],
           ].map(([text, href]) => (
             <li
@@ -235,12 +238,13 @@ const Navbar = () => {
         </div>
 
         <nav className="navpc animate__animated animate__slideInDown z-[9999] p-4 text-[#e7ebf3] dark:text-text">
-          <ul className="box-shadow-nav relative z-[9999] flex w-fit items-center justify-center gap-16 rounded-[60px] border-solid border-[#404040]/5 bg-secondary px-6 py-2 text-xl">
+          <ul className="box-shadow-nav relative z-[9999] flex w-fit items-center justify-center gap-8 rounded-[60px] border-solid border-[#404040]/5 bg-secondary px-6 py-2 text-xl xl:gap-16">
             <div className="menu-background" style={backgroundStyle}></div>
             {[
               ["Home", "#home"],
               ["Works", "#works"],
               ["About", "#about"],
+              ["Skills", "#skills"],
               ["Contact", "#contact"],
             ].map(([text, href]) => (
               <li

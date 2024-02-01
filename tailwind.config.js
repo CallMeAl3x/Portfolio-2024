@@ -12,12 +12,15 @@ export default {
       },
       backgroundImage: {
         "gradient-title":
-          "linear-gradient(to bottom, #004dff 0%, #002477 60%, #000000 100%)",
+          "linear-gradient(to bottom, #FFFFFF 0%, #5588FF 100%)",
         "gradient-footer-tittle":
           "linear-gradient(to bottom, #FFFFFF 46%, #0000 100%)",
       },
       fontSize: {
         h4: { xl: "3.5rem" },
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
       },
     },
   },

@@ -6,20 +6,17 @@ const Hero = () => {
       className="section dark:gradient-background-dark gradient-background-light flex h-[64lvh] w-full flex-col rounded-b-[86px] px-1.5 text-text sm:h-[84lvh] sm:px-0 lg:h-[99.6lvh]"
       id="home"
     >
-      <div className="flex h-full flex-col items-center justify-center text-center font-semibold md:mt-0 lg:mt-0 xl:flex-row xl:items-center xl:justify-center xl:text-left">
-        <div className="flex w-full flex-col xl:w-[60%]">
-          <h2 className="text-[30px] sm:text-[50px] lg:text-[74px]">
-            Bonefons Alexandre
-          </h2>
-          <h1 className="text-[30px] sm:text-[50px] lg:text-[74px] xl:text-left">
-            <FormattedMessage id="hero.title" />
-          </h1>
-        </div>
-        <div className="w-full xl:w-[30%]">
-          <h3 className="mt-12 text-center text-[18px] sm:text-[26px] lg:mt-8 lg:text-[40px]">
-            <FormattedMessage id="hero.description" />
-          </h3>
-        </div>
+      <div className="flex h-full flex-col items-center justify-center gap-12 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-4 xl:items-center xl:justify-center">
+        <h2 className="mt-8 text-[30px] sm:text-[50px] lg:text-[94px]">
+          Bonefons Alexandre
+        </h2>
+        <h3 className="max-w-[1300px] text-center text-[22px] sm:text-[26px] lg:mt-8 lg:text-[64px]">
+          <FormattedMessage id="hero.description" />
+        </h3>
+
+        <h5 className="max-w-[750px] text-center text-[18px] sm:text-[26px] lg:mt-8 lg:text-[30px]">
+          <FormattedMessage id="hero.stage" />
+        </h5>
       </div>
       <a
         href="#works"

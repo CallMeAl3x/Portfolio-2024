@@ -5,27 +5,46 @@ import github from "/github.svg";
 const Footer = () => {
   return (
     <footer
-      className="h-full section dark:gradient-background-footer-dark gradient-background-footer-light rounded-t-[86px] mt-96 pb-12 lg:pb-24"
-      id="contact">
-      <h3 className="lg:text-[70px] mb-44 top-16 relative text-[60px] mt-20 font-[Monrope] font-semibold bg-gradient-footer-tittle text-center gradient-text">
+      className="section dark:gradient-background-footer-dark gradient-background-footer-light mt-96 h-full rounded-t-[86px] pb-12 lg:pb-24"
+      id="contact"
+    >
+      <h3 className="gradient-text relative top-16 mb-44 mt-20 bg-gradient-footer-tittle text-center font-[Monrope] text-[60px] font-semibold lg:text-[70px]">
         Contact
       </h3>
-      <div className="flex lg:flex-row flex-col items-center justify-center gap-6">
-        <button className="flex gap-2 items-center px-8 justify-center lg:justify-normal w-full max-w-[11rem] lg:w-fit lg:px-10 py-2 rounded-[22px] bg-secondary">
-          <img src={mail} className="w-[24px] h-[20px]" alt="" />
-          <p className="text-background dark:text-text">Email</p>
-        </button>
-        <button className="flex gap-2 items-center px-8 justify-center lg:justify-normal w-full max-w-[11rem] lg:w-fit lg:px-10 py-2 rounded-[22px] bg-secondary">
-          <img src={linkedin} className="w-[25px] h-[25px]" alt="" />
-          <p className="text-background dark:text-text">Linkedin</p>
-        </button>
-        <button className="flex gap-2 items-center px-8 justify-center lg:justify-normal w-full max-w-[11rem] lg:w-fit lg:px-10 py-2 rounded-[22px] bg-secondary">
-          <img src={github} className="w-[25px] h-[25px]" alt="" />
-          <p className="text-background dark:text-text">GitHub</p>
-        </button>
+      <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
+        <a
+          href="mailto:Alexandre.bonefons@outlook.fr"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="flex w-full max-w-[11rem] items-center justify-center gap-2 rounded-[22px] bg-secondary px-8 py-2 lg:w-fit lg:justify-normal lg:px-10">
+            <img src={mail} className="h-[20px] w-[24px]" alt="" />
+            <p className="text-background dark:text-text">Email</p>
+          </button>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/alexandre-bonefons-166875250/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="flex w-full max-w-[11rem] items-center justify-center gap-2 rounded-[22px] bg-secondary px-8 py-2 lg:w-fit lg:justify-normal lg:px-10">
+            <img src={linkedin} className="h-[25px] w-[25px]" alt="" />
+            <p className="text-background dark:text-text">Linkedin</p>
+          </button>
+        </a>
+        <a
+          href="https://github.com/CallMeAl3x"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button className="flex w-full max-w-[11rem] items-center justify-center gap-2 rounded-[22px] bg-secondary px-8 py-2 lg:w-fit lg:justify-normal lg:px-10">
+            <img src={github} className="h-[25px] w-[25px]" alt="" />
+            <p className="text-background dark:text-text">GitHub</p>
+          </button>
+        </a>
       </div>
 
-      <p className="text-text mt-16 flex justify-center">
+      <p className="mt-16 flex justify-center text-text">
         Copyright ©2024 - All rights reserved
       </p>
     </footer>

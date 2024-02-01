@@ -1,8 +1,9 @@
 {
-  "hero.description": "Développeur front-end, passionné par le responsive design pour une expérience utilisateur optimale sur tous les écrans.",
+  "hero.description": "Développeur front-end, passionné par le responsive design.",
   "hero.title": "Développeur Web",
+  "hero.stage": "Recherchant un stage à partir du 8 Avril pour une durée de 10 mois minimum",
 
-  "card_description1": "Weather App est un site. Il permet aux utilisateurs de voir la météo actuelle et les prévisions à venir dans la ville de votre choix.\nJ'ai utilisé Vite, TailwindCSS ainsi que Fetch API pour le construire. \nLe design m'a été donné par DevChallenges",
+  "card_description1": "Weather App est un site qui permet aux utilisateurs de voir la météo actuelle et les prévisions à venir dans la ville de votre choix.\nJ'ai utilisé Vite, TailwindCSS ainsi que Fetch API pour le construire. \nLe design m'a été donné par DevChallenges",
   "card_title1": "Weather",
   "card_green1": "App",
 

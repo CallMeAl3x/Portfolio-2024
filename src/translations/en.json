@@ -1,6 +1,7 @@
 {
-  "hero.description": "Front-end developer passionate about responsive design for an optimal user experience on all screens.",
+  "hero.description": "Développeur front-end, passionné par le responsive design.",
   "hero.title": "Web Developer",
+  "hero.stage": "Looking for an internship starting April 8th for a minimum of 10 months",
 
   "card_description1": "Weather App is a website. It allows users to view the current weather and upcoming forecasts in the city of their choice. \nI used Vite, TailwindCSS, and Fetch API to build it. \nThe design was provided to me by DevChallenges.",
   "card_title1": "Weather",
