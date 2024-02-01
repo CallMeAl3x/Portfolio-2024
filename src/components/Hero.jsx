@@ -3,11 +3,11 @@ import { FormattedMessage } from "react-intl";
 const Hero = () => {
   return (
     <main
-      className="section dark:gradient-background-dark gradient-background-light flex h-[64lvh] w-full flex-col rounded-b-[86px] px-1.5 text-text sm:h-[84lvh] sm:px-0 lg:h-[99.6lvh]"
+      className="section dark:gradient-background-dark gradient-background-light flex h-max w-full flex-col rounded-b-[86px] px-1.5 text-text sm:h-[84lvh] sm:px-0 lg:h-[99.6lvh]"
       id="home"
     >
       <div className="flex h-full flex-col items-center justify-center gap-12 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-4 xl:items-center xl:justify-center">
-        <h2 className="mt-8 text-[30px] sm:text-[50px] lg:text-[94px]">
+        <h2 className="mt-24 text-[45px] sm:text-[50px] lg:mt-8 lg:text-[94px]">
           Bonefons Alexandre
         </h2>
         <h3 className="max-w-[1300px] text-center text-[22px] sm:text-[26px] lg:mt-8 lg:text-[64px]">
@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
       <a
         href="#works"
-        className="text mb-6 ml-auto mr-auto mt-auto flex flex-col items-center justify-center"
+        className="text mb-6 ml-auto mr-auto mt-12 flex flex-col items-center justify-center lg:mt-auto"
       >
         <p className="text-[36px] font-bold uppercase">Scroll</p>
         <svg

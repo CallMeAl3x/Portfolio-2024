@@ -10,6 +10,7 @@ import Works from "./components/Works";
 import Hero from "./components/Hero";
 import Navbar from "./components/NavBar";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 const messages = {
   fr: messagesFr,
@@ -22,12 +23,14 @@ const App = () => {
 
   return (
     <div
-      className={`${darkMode ? "" : "dark"} bg-background dark:bg-background`}>
+      className={`${darkMode ? "" : "dark"} bg-background dark:bg-background`}
+    >
       <IntlProvider locale={locale} messages={messages[locale]}>
         <Navbar />
         <Hero />
         <Works />
         <About />
+        <Skills />
         <Footer />
       </IntlProvider>
     </div>
