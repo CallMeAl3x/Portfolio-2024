@@ -240,11 +240,11 @@ const Works = () => {
 
               <div className="mt-7 flex flex-col justify-center gap-4 text-base font-semibold md:items-center xl:mt-10 xl:flex-row-reverse xl:justify-start xl:pb-3">
                 <div className="flex flex-col items-center gap-4 md:flex-row">
-                  <button className="btn_skills">Vite</button>
                   <button className="btn_skills">ResponsiveVoice API</button>
+                  <button className="btn_skills">Mymemory</button>
                 </div>
                 <div className="flex justify-center">
-                  <button className="btn_skills">Mymemory</button>
+                  <button className="btn_skills">Vite</button>
                 </div>
               </div>
             </div>
