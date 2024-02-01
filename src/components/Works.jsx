@@ -182,7 +182,7 @@ const Works = () => {
             </span>
             <div className="mt-4 flex w-full flex-col justify-center xl:justify-between">
               <p className="ml-auto mr-auto w-full whitespace-pre-line text-center text-base xl:max-w-[460px] xl:text-left">
-                <FormattedMessage id="card_description1" />
+                <FormattedMessage id="card_description3" />
               </p>
 
               <div className="mt-7 flex flex-col justify-center gap-4 text-base font-semibold md:items-center xl:mt-10 xl:flex-row xl:justify-start xl:pb-3">
@@ -235,7 +235,7 @@ const Works = () => {
             </span>
             <div className="mt-4 flex w-full flex-col justify-center xl:justify-between">
               <p className="ml-auto mr-auto w-full whitespace-pre-line text-center text-base xl:max-w-[460px] xl:text-right">
-                <FormattedMessage id="card_description2" />
+                <FormattedMessage id="card_description4" />
               </p>
 
               <div className="mt-7 flex flex-col justify-center gap-4 text-base font-semibold md:items-center xl:mt-10 xl:flex-row-reverse xl:justify-start xl:pb-3">
