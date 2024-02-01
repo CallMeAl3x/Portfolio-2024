@@ -8,18 +8,6 @@ import ReactCurvedText from "react-curved-text";
 import Links from "../utils/Links";
 
 const Works = () => {
-  const redirectToWebsite = (e) => {
-    e.preventDefault();
-    const url = e.currentTarget.getAttribute("data-url");
-    window.open(url, "_blank");
-  };
-
-  const redirectToGithub = (e) => {
-    e.preventDefault();
-    const url = e.currentTarget.getAttribute("data-url");
-    window.open(url, "_blank");
-  };
-
   const textanimation = (
     <ReactCurvedText
       width={100}
@@ -97,7 +85,7 @@ const Works = () => {
           </div>
           <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-end lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
             <a
-              onClick={redirectToGithub}
+              href={Links.WeatherGithub}
               data-url={Links.WeatherGithub}
               className="z-[2]"
             >
@@ -106,20 +94,18 @@ const Works = () => {
                 {textanimation}
               </div>
             </a>
-            <button className="font-Inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white">
-              <a
-                onClick={redirectToWebsite}
-                data-url={Links.WeatherWebsite}
-                className="font-inter"
-              >
-                Voir le site
-              </a>
-            </button>
+            <a
+              href={Links.WeatherWebsite}
+              role="button"
+              className="font-inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
+            >
+              Voir le site
+            </a>
           </div>
         </div>
 
         <div className="flex h-full items-center justify-center">
-          <a onClick={redirectToWebsite} data-url={Links.WeatherWebsite}>
+          <a href={Links.WeatherWebsite}>
             <img
               src={weatherapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
@@ -156,7 +142,7 @@ const Works = () => {
           </div>
           <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-start lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
             <a
-              onClick={redirectToGithub}
+              href={Links.WebdocumentaireGithub}
               data-url={Links.WebdocumentaireGithub}
               className="z-[2]"
             >
@@ -165,21 +151,17 @@ const Works = () => {
                 {textanimation}
               </div>
             </a>
-            <button
-              onClick={redirectToWebsite}
-              data-url={Links.WebdocumentaireWebsite}
+            <a
+              href={Links.WebdocumentaireWebsite}
               className="font-inter flex w-max cursor-pointer items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
-            </button>
+            </a>
           </div>
         </div>
 
         <div className="flex h-full items-center justify-center">
-          <a
-            onClick={redirectToWebsite}
-            data-url={Links.WebdocumentaireWebsite}
-          >
+          <a href={Links.WebdocumentaireWebsite}>
             <img
               src={webdocumentary}
               className="h-full w-auto cursor-pointer xl:max-w-none"
@@ -215,33 +197,24 @@ const Works = () => {
             </div>
           </div>
           <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-end lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
-            <a
-              onClick={redirectToGithub}
-              data-url={Links.DataVisualisationGithub}
-              className="z-[2]"
-            >
+            <a href={Links.DataVisualisationGithub} className="z-[2]">
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
                 {textanimation}
               </div>
             </a>
-            <button className="font-Inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white">
-              <a
-                onClick={redirectToWebsite}
-                data-url={Links.DataVisualisationWebsite}
-                className="font-inter"
-              >
-                Voir le site
-              </a>
-            </button>
+            <a
+              href={Links.DataVisualisationWebsite}
+              role="button"
+              className="font-inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
+            >
+              Voir le site
+            </a>
           </div>
         </div>
 
         <div className="flex h-full items-center justify-center">
-          <a
-            onClick={redirectToWebsite}
-            data-url={Links.DataVisualisationWebsite}
-          >
+          <a href={Links.DataVisualisationWebsite}>
             <img
               src={datavisualisation}
               className="h-full w-auto cursor-pointer xl:max-w-none"
@@ -277,30 +250,24 @@ const Works = () => {
             </div>
           </div>
           <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-start lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
-            <a
-              onClick={redirectToGithub}
-              data-url={Links.TranslateAppGithub}
-              className="z-[2]"
-            >
+            <a href={Links.TranslateAppGithub} className="z-[2]">
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
                 {textanimation}
               </div>
             </a>
-            <button className="font-Inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white">
-              <a
-                onClick={redirectToWebsite}
-                data-url={Links.TranslateAppWebsite}
-                className="font-inter"
-              >
-                Voir le site
-              </a>
-            </button>
+            <a
+              href={Links.TranslateAppWebsite}
+              role="button"
+              className="font-inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
+            >
+              Voir le site
+            </a>
           </div>
         </div>
 
         <div className="flex h-full items-center justify-center">
-          <a onClick={redirectToWebsite} data-url={Links.TranslateAppWebsite}>
+          <a href={Links.TranslateAppWebsite}>
             <img
               src={translateapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
