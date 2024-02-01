@@ -368,3 +368,12 @@ html {
     transform: rotate(360deg);
   }
 }
+
+.accent {
+  color: var(--accent);
+}
+
+.worklink {
+  color: var(--accent);
+  text-decoration: underline;
+}
