@@ -52,10 +52,10 @@ const Works = () => {
 
   return (
     <main
-      className="section work part mx-8 mt-32 flex flex-col gap-24 xl:mx-0 xl:mt-32 mr-auto ml-auto"
+      className="section work part mx-4 mt-32 flex flex-col items-center gap-24 md:mx-8 xl:mx-0 xl:ml-auto xl:mr-auto xl:mt-32"
       id="works"
     >
-      <h3 className="gradient-text font-font-manrope mt-20 bg-gradient-title bg-clip-text text-center text-[60px] font-semibold sm:text-[70px] lg:text-[102px] xl:mt-48 ">
+      <h3 className="gradient-text font-font-manrope bg-gradient-footer-tittle_white mt-20 bg-clip-text text-center text-[60px] font-semibold dark:bg-gradient-title sm:text-[70px] lg:text-[102px] xl:mt-48 ">
         Works
       </h3>
       <div className="card component mt-0 flex flex-col justify-center gap-8 sm:flex-row sm:items-center lg:mt-10 lg:max-w-[84%] xl:ml-auto xl:mr-auto xl:gap-24">
@@ -83,7 +83,7 @@ const Works = () => {
               </div>
             </div>
           </div>
-          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-end lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
+          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-end lg:gap-0 xl:ml-12 xl:flex-col xl:justify-between xl:pr-12">
             <a
               href={Links.WeatherGithub}
               data-url={Links.WeatherGithub}
@@ -140,7 +140,7 @@ const Works = () => {
               </div>
             </div>
           </div>
-          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-start lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
+          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-start lg:gap-0 xl:ml-12 xl:flex-col xl:justify-between xl:pr-12">
             <a
               href={Links.WebdocumentaireGithub}
               data-url={Links.WebdocumentaireGithub}
@@ -196,7 +196,7 @@ const Works = () => {
               </div>
             </div>
           </div>
-          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-end lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
+          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-end lg:gap-0 xl:ml-12 xl:flex-col xl:justify-between xl:pr-12">
             <a href={Links.DataVisualisationGithub} className="z-[2]">
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
@@ -249,7 +249,7 @@ const Works = () => {
               </div>
             </div>
           </div>
-          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-start lg:gap-0 xl:ml-24 xl:flex-col xl:justify-between xl:pr-12">
+          <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-start lg:gap-0 xl:ml-12 xl:flex-col xl:justify-between xl:pr-12">
             <a href={Links.TranslateAppGithub} className="z-[2]">
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}

@@ -6,7 +6,7 @@ const Hero = () => {
       className="section dark:gradient-background-dark gradient-background-light flex h-max w-full flex-col rounded-b-[86px] px-1.5 text-text sm:h-[84lvh] sm:px-0 lg:h-[99.6lvh]"
       id="home"
     >
-      <div className="flex h-full flex-col items-center justify-center gap-8 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-4 xl:items-center xl:justify-center">
+      <div className="flex h-full flex-col items-center justify-center gap-12 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-4 xl:items-center xl:justify-center">
         <h2 className="mt-20 text-[45px] sm:text-[50px] lg:mt-28 lg:text-[74px] xl:text-[94px]">
           Bonefons Alexandre
         </h2>
@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
       <a
         href="#works"
-        className="text mb-6 ml-auto mr-auto flex flex-col items-center justify-center lg:mt-[2%]"
+        className="text mb-6 ml-auto mr-auto mt-16 flex flex-col items-center justify-center lg:mt-[2%]"
       >
         <p className="text-[36px] font-bold uppercase">Scroll</p>
         <svg

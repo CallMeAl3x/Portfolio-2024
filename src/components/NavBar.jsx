@@ -45,7 +45,7 @@ const Navbar = () => {
           830: "Works",
           3500: "About",
           4300: "Skills",
-          5000: "Contact",
+          5800: "Contact",
         };
       } else if (window.innerWidth >= 768) {
         scrollSectionMap = {
@@ -53,7 +53,7 @@ const Navbar = () => {
           800: "Works",
           5800: "About",
           6400: "Skills",
-          7400: "Contact",
+          8500: "Contact",
         };
       }
 
@@ -263,7 +263,7 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <label className="xl:mr-12 flex items-center justify-center rounded-full bg-secondary p-2.5">
+        <label className="flex items-center justify-center rounded-full bg-secondary p-2.5 xl:mr-12">
           <input
             type="checkbox"
             checked={darkMode}
