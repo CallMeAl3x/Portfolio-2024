@@ -114,6 +114,7 @@ const Works = () => {
         <div className="flex h-full items-center justify-center">
           <a href={Links.WeatherWebsite}>
             <img
+              loading="lazy"
               src={weatherapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt=""
@@ -170,6 +171,7 @@ const Works = () => {
         <div className="flex h-full items-center justify-center">
           <a href={Links.WebdocumentaireWebsite}>
             <img
+              loading="lazy"
               src={webdocumentary}
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt=""
@@ -224,6 +226,7 @@ const Works = () => {
           <a href={Links.DataVisualisationWebsite}>
             <img
               src={datavisualisation}
+              loading="lazy"
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt=""
             />
@@ -276,6 +279,7 @@ const Works = () => {
         <div className="flex h-full items-center justify-center">
           <a href={Links.TranslateAppWebsite}>
             <img
+              loading="lazy"
               src={translateapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt=""

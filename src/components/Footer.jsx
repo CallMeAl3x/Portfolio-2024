@@ -39,7 +39,12 @@ const Footer = () => {
           rel="noreferrer"
         >
           <button className="flex w-full max-w-[11rem] items-center justify-center gap-2 rounded-[22px] bg-secondary px-8 py-2 lg:w-fit lg:justify-normal lg:px-10">
-            <img src={github} className="h-[25px] w-[25px]" alt="" />
+            <img
+              src={github}
+              loading="lazy"
+              className="h-[25px] w-[25px]"
+              alt=""
+            />
             <p className="text-xl text-background dark:text-text">GitHub</p>
           </button>
         </a>

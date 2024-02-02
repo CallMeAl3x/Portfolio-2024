@@ -29,13 +29,19 @@ const Skills = () => {
           <div className="ml-auto mr-auto mt-8 flex flex-col items-center gap-6 md:w-fit md:flex-row lg:ml-0">
             <div className="mb flex gap-6">
               <div className="dark:skill_card skill_card_white">
-                <img src="/vite.svg" className="image_card" draggable={false} />
+                <img
+                  src="/vite.svg"
+                  className="image_card"
+                  draggable={false}
+                  loading="lazy"
+                />
                 <p className="text_skill_card text-background dark:text-text ">
                   Vite
                 </p>
               </div>
               <div className="dark:skill_card skill_card_white">
                 <img
+                  loading="lazy"
                   src="/angular.svg"
                   className="image_card"
                   draggable={false}
@@ -48,6 +54,7 @@ const Skills = () => {
 
             <div className="dark:skill_card skill_card_white">
               <img
+                loading="lazy"
                 src="/tailwindcss.svg"
                 className="image_card"
                 draggable={false}
@@ -68,6 +75,7 @@ const Skills = () => {
             <div className="mb flex gap-6">
               <div className="dark:skill_card skill_card_white">
                 <img
+                  loading="lazy"
                   src="/symfony.svg"
                   className="image_card"
                   draggable={false}
@@ -77,7 +85,12 @@ const Skills = () => {
                 </p>
               </div>
               <div className="dark:skill_card skill_card_white">
-                <img src="/php.svg" className="image_card" draggable={false} />
+                <img
+                  src="/php.svg"
+                  loading="lazy"
+                  className="image_card"
+                  draggable={false}
+                />
                 <p className="text_skill_card text-background dark:text-text ">
                   PhP
                 </p>
@@ -85,7 +98,12 @@ const Skills = () => {
             </div>
 
             <div className="dark:skill_card skill_card_white">
-              <img src="/nodejs.svg" className="image_card" draggable={false} />
+              <img
+                src="/nodejs.svg"
+                loading="lazy"
+                className="image_card"
+                draggable={false}
+              />
               <p className="text_skill_card text-background dark:text-text ">
                 NodeJS
               </p>
@@ -116,6 +134,7 @@ const Skills = () => {
                 className="front_card gradient-card-skills-light dark:gradient-card-skills-dark ml-auto mr-auto flex h-28 w-28 flex-col items-center justify-evenly gap-4 rounded-md md:h-32 md:w-32 lg:mt-12 lg:h-44 lg:w-44 lg:rounded-[30px]"
               >
                 <img
+                  loading="lazy"
                   src={techimg}
                   className="h-10 w-10 md:h-12 md:w-12 lg:h-16 lg:w-16"
                 />
