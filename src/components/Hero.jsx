@@ -6,7 +6,7 @@ const Hero = () => {
       className="section dark:gradient-background-dark gradient-background-light flex h-max w-full flex-col rounded-b-[86px] px-1.5 text-text sm:h-[84lvh] sm:px-0 lg:h-[99.6lvh]"
       id="home"
     >
-      <div className="xl:justify-left ml-4 flex h-full flex-col items-start justify-center gap-12 text-start font-semibold md:ml-24 md:mt-0 lg:mt-0 lg:items-start lg:gap-4">
+      <div className="xl:justify-left ml-4 flex h-full flex-col items-start justify-center gap-12 text-start font-semibold md:ml-24 md:mt-0 lg:mt-0 lg:items-start lg:gap-4 xl:ml-48">
         <h2 className="mt-20 text-[45px] font-bold sm:text-[50px] lg:mt-28 lg:text-[74px] xl:text-[94px]">
           Bonefons Alexandre
         </h2>
