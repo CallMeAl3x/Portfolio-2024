@@ -165,6 +165,15 @@ html {
     background-position: center center;
   }
 
+  @media screen and (max-width: 640px) {
+    .gradient-background-dark {
+      background-image: url(/background-hero_50.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+    }
+  }
+
   .gradient-background-light {
     background-image: url(/background-hero.webp);
     background-repeat: no-repeat;
