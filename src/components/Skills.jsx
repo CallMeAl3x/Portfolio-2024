@@ -1,12 +1,16 @@
+import { FormattedMessage } from "react-intl";
+
 const Skills = () => {
   return (
     <main
-      className="section work part mx-8 mt-32 flex flex-col gap-12 lg:mx-32 xl:mt-32"
+      className="section work part mt-32 flex flex-col gap-12 lg:mx-32 xl:mt-32"
       id="skills"
     >
-      <h2 className="xl:mt-88 mt-28 text-center font-manrope text-[60px] font-semibold text-text sm:text-[70px] lg:text-[102px]">
-        Skill &{" "}
-        <span className="gradient-text bg-gradient-title bg-clip-text">me</span>
+      <h2 className="xl:mt-88 mt-28 text-center font-manrope text-[42.5px] font-semibold text-text sm:text-[80px] lg:text-[102px]">
+        <FormattedMessage id="skills.title" />
+        <span className="gradient-text bg-gradient-title bg-clip-text">
+          <FormattedMessage id="skills.title2" />
+        </span>
       </h2>
 
       <section className="flex flex-col gap-24 lg:gap-16">
@@ -98,6 +102,7 @@ const Skills = () => {
               ["Photoshop", "/photoshop.svg"],
               ["After Effect", "/aftereffect.svg"],
               ["Première Pro", "/premierepro.svg"],
+              ["ChatGPT", "/chatgpt.svg"],
             ].map(([techname, techimg]) => (
               <div
                 key={techimg}

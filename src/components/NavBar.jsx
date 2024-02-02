@@ -90,16 +90,14 @@ const Navbar = () => {
 
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
-  const { setLocale, locale } = useLanguage();
+  const { setLocale, locale } = useLanguage("fr");
 
   const handleLangageToggleFR = () => {
     setLocale("fr");
-    handleHamburgerToggle();
   };
 
   const handleLangageToggleEN = () => {
     setLocale("en");
-    handleHamburgerToggle();
   };
 
   const handleDarkModeToggle = () => {
@@ -193,7 +191,7 @@ const Navbar = () => {
           ].map(([text, href]) => (
             <li
               key={text}
-              className={`"text-3xl font-semibold" flex items-center justify-center text-text ${
+              className={`flex items-center justify-center text-text ${
                 activeSection === text ? "active_mobile" : ""
               }`}
               onClick={handleHamburgerToggle}

@@ -56,7 +56,7 @@ const Works = () => {
       id="works"
     >
       <h3 className="gradient-text font-font-manrope bg-gradient-footer-tittle_white mt-20 bg-clip-text text-center text-[60px] font-semibold dark:bg-gradient-title sm:text-[70px] lg:text-[102px] xl:mt-48 ">
-        Works
+        <FormattedMessage id="works.title" />
       </h3>
       <div className="card component mt-0 flex flex-col justify-center gap-8 sm:flex-row sm:items-center lg:mt-10 lg:max-w-[84%] xl:ml-auto xl:mr-auto xl:gap-24">
         <div className="dark:gradient-card-dark gradient-card-light card  info relative flex flex-col rounded-xl text-center sm:w-[70%] xl:w-fit xl:flex-row xl:text-left">

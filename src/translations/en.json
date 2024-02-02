@@ -1,7 +1,15 @@
 {
-  "hero.description": "Développeur front-end, passionné par le responsive design.",
+  "home": "Home",
+  "works": "Works",
+  "about": "About",
+  "skills": "Skills",
+  "contact": "Contact",
+  "works.title": "Works",
+  "skills.title": "Skills & ",
+  "skills.title2": "me",
+  "hero.description": "Front-end developer, passionate about responsive design.",
   "hero.title": "Web Developer",
-  "hero.stage": "Looking for an internship starting April 8th for a minimum of 10 months",
+  "hero.stage": "Looking for an internship starting April 8th for a minimum of 10 weeks",
 
   "card_description1": "Weather App is a website. It allows users to view the current weather and upcoming forecasts in the city of their choice. \nI used Vite, TailwindCSS, and Fetch API to build it. \nThe design was provided to me by DevChallenges.",
   "card_title1": "Weather",
