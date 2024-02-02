@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 const Hero = () => {
   return (
     <main
-      className="section dark:gradient-background-dark gradient-background-light flex h-max w-full flex-col rounded-b-[70px] px-1.5 text-background dark:text-text  sm:h-[84lvh] sm:px-0 lg:h-[100vh] lg:rounded-b-[40px]"
+      className="section flex h-max w-full flex-col rounded-b-[70px] px-1.5 text-background dark:text-text  sm:h-[84lvh] sm:px-0 lg:h-[100vh] lg:rounded-b-[40px]"
       id="home"
     >
       <div className="xl:justify-left flex h-full flex-col items-center justify-center gap-12 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-8 xl:items-center">
