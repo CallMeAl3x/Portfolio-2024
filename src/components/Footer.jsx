@@ -19,7 +19,7 @@ const Footer = () => {
           rel="noreferrer"
         >
           <button className="flex w-full max-w-[11rem] items-center justify-center gap-2 rounded-[22px] bg-secondary px-8 py-2 lg:w-fit lg:justify-normal lg:px-10">
-            <img src={mail} className="h-[20px] w-[24px]" alt="" />
+            <img src={mail} className="h-[20px] w-[24px]" alt="Mail icon" />
             <p className="text-xl text-background dark:text-text">Email</p>
           </button>
         </a>
@@ -29,7 +29,11 @@ const Footer = () => {
           rel="noreferrer"
         >
           <button className="flex w-full max-w-[11rem] items-center justify-center gap-2 rounded-[22px] bg-secondary px-8 py-2 lg:w-fit lg:justify-normal lg:px-10">
-            <img src={linkedin} className="h-[25px] w-[25px]" alt="" />
+            <img
+              src={linkedin}
+              className="h-[25px] w-[25px]"
+              alt="Linkedin icon"
+            />
             <p className="text-xl text-background dark:text-text">Linkedin</p>
           </button>
         </a>
@@ -43,7 +47,7 @@ const Footer = () => {
               src={github}
               loading="lazy"
               className="h-[25px] w-[25px]"
-              alt=""
+              alt="Github icon"
             />
             <p className="text-xl text-background dark:text-text">GitHub</p>
           </button>

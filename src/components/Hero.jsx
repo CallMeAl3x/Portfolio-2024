@@ -14,7 +14,7 @@ const Hero = () => {
           <FormattedMessage id="hero.description" />
         </h3>
 
-        <h5 className="max-w-[750px] text-center text-[18px] sm:text-[26px] lg:mt-2 lg:text-[30px]">
+        <h4 className="max-w-[750px] text-center text-[18px] sm:text-[26px] lg:mt-2 lg:text-[30px]">
           <FormattedMessage
             id="hero.stage"
             values={{
@@ -30,7 +30,7 @@ const Hero = () => {
               ), // Pour surligner
             }}
           />
-        </h5>
+        </h4>
       </div>
       <a
         href="#works"

@@ -261,8 +261,12 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <label className="flex items-center justify-center rounded-full bg-secondary p-2.5 xl:mr-12">
+        <label
+          className="flex items-center justify-center rounded-full bg-secondary p-2.5 xl:mr-12"
+          htmlFor="darkModeToggle"
+        >
           <input
+            id="darkModeToggle"
             type="checkbox"
             checked={darkMode}
             onChange={handleDarkModeToggle}
@@ -273,15 +277,27 @@ const Navbar = () => {
               <>
                 <img
                   src={moon_inactive}
-                  alt=""
+                  alt="Moon inactive"
                   className="h-8 w-8 max-w-none"
                 />
-                <img src={sun_active} alt="" className="h-8 w-8 max-w-none" />
+                <img
+                  src={sun_active}
+                  alt="Moon active"
+                  className="h-8 w-8 max-w-none"
+                />
               </>
             ) : (
               <>
-                <img src={moon_active} alt="" className="h-8 w-8 max-w-none" />
-                <img src={sun_inactive} alt="" className="h-8 w-8 max-w-none" />
+                <img
+                  src={moon_active}
+                  alt="Moon active"
+                  className="h-8 w-8 max-w-none"
+                />
+                <img
+                  src={sun_inactive}
+                  alt="Moon inactive"
+                  className="h-8 w-8 max-w-none"
+                />
               </>
             )}
           </div>

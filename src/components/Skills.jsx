@@ -34,6 +34,7 @@ const Skills = () => {
                   className="image_card"
                   draggable={false}
                   loading="lazy"
+                  alt="Vite logo"
                 />
                 <p className="text_skill_card text-background dark:text-text ">
                   Vite
@@ -45,6 +46,7 @@ const Skills = () => {
                   src="/angular.svg"
                   className="image_card"
                   draggable={false}
+                  alt="Angular logo"
                 />
                 <p className="text_skill_card text-background dark:text-text ">
                   Angular
@@ -58,6 +60,7 @@ const Skills = () => {
                 src="/tailwindcss.svg"
                 className="image_card"
                 draggable={false}
+                alt="Tailwindcss logo"
               />
               <p className="text_skill_card text-background dark:text-text ">
                 Tailwind
@@ -79,6 +82,7 @@ const Skills = () => {
                   src="/symfony.svg"
                   className="image_card"
                   draggable={false}
+                  alt="Symfony logo"
                 />
                 <p className="text_skill_card text-background dark:text-text ">
                   Symfony
@@ -90,6 +94,7 @@ const Skills = () => {
                   loading="lazy"
                   className="image_card"
                   draggable={false}
+                  alt="PhP logo"
                 />
                 <p className="text_skill_card text-background dark:text-text ">
                   PhP
@@ -103,6 +108,7 @@ const Skills = () => {
                 loading="lazy"
                 className="image_card"
                 draggable={false}
+                alt="NodeJS logo"
               />
               <p className="text_skill_card text-background dark:text-text ">
                 NodeJS
@@ -136,6 +142,7 @@ const Skills = () => {
                 <img
                   loading="lazy"
                   src={techimg}
+                  alt="techlogo"
                   className="h-10 w-10 md:h-12 md:w-12 lg:h-16 lg:w-16"
                 />
                 <p className="text_skill_card text-center text-background dark:text-text ">
