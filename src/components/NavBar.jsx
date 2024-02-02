@@ -263,7 +263,7 @@ const Navbar = () => {
           </ul>
         </nav>
 
-        <label className="mr-12 flex items-center justify-center rounded-full bg-secondary p-2.5">
+        <label className="xl:mr-12 flex items-center justify-center rounded-full bg-secondary p-2.5">
           <input
             type="checkbox"
             checked={darkMode}

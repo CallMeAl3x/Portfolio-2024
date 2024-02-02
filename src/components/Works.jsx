@@ -52,7 +52,7 @@ const Works = () => {
 
   return (
     <main
-      className="section work part mx-8 mt-32 flex flex-col gap-24 xl:mx-0 xl:mt-32"
+      className="section work part mx-8 mt-32 flex flex-col gap-24 xl:mx-0 xl:mt-32 mr-auto ml-auto"
       id="works"
     >
       <h3 className="gradient-text font-font-manrope mt-20 bg-gradient-title bg-clip-text text-center text-[60px] font-semibold sm:text-[70px] lg:text-[102px] xl:mt-48 ">

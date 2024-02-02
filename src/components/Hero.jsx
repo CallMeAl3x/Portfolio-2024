@@ -6,21 +6,21 @@ const Hero = () => {
       className="section dark:gradient-background-dark gradient-background-light flex h-max w-full flex-col rounded-b-[86px] px-1.5 text-text sm:h-[84lvh] sm:px-0 lg:h-[99.6lvh]"
       id="home"
     >
-      <div className="flex h-full flex-col items-center justify-center gap-12 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-4 xl:items-center xl:justify-center">
-        <h2 className="mt-24 text-[45px] sm:text-[50px] lg:mt-8 lg:text-[94px]">
+      <div className="flex h-full flex-col items-center justify-center gap-8 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-4 xl:items-center xl:justify-center">
+        <h2 className="mt-20 text-[45px] sm:text-[50px] lg:mt-28 lg:text-[74px] xl:text-[94px]">
           Bonefons Alexandre
         </h2>
-        <h3 className="max-w-[1300px] text-center text-[22px] sm:text-[26px] lg:mt-8 lg:text-[64px]">
+        <h3 className="max-w-[1000px] text-center text-[22px] sm:text-[26px] lg:text-[50px]">
           <FormattedMessage id="hero.description" />
         </h3>
 
-        <h5 className="max-w-[750px] text-center text-[18px] sm:text-[26px] lg:mt-8 lg:text-[30px]">
+        <h5 className="max-w-[750px] text-center text-[18px] sm:text-[26px] lg:mt-2 lg:text-[30px]">
           <FormattedMessage id="hero.stage" />
         </h5>
       </div>
       <a
         href="#works"
-        className="text mb-6 ml-auto mr-auto mt-12 flex flex-col items-center justify-center lg:mt-auto"
+        className="text mb-6 ml-auto mr-auto flex flex-col items-center justify-center lg:mt-[2%]"
       >
         <p className="text-[36px] font-bold uppercase">Scroll</p>
         <svg
@@ -29,7 +29,7 @@ const Hero = () => {
           viewBox="0 0 42 75"
           fill="var(--color-svg-fill-black)"
           alt="ArrowDown"
-          className="h-[75px] w-[42px]"
+          className="h-[58px] w-[42px]"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path

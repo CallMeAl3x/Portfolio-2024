@@ -12,7 +12,7 @@ const About = () => {
           draggable={false}
         />
         <div className="lg:p-46 xl:mt-22 mt-8 w-full p-4 lg:w-1/2">
-          <p className="max-w-[700px] whitespace-pre-line text-center text-[16px] text-text md:text-[18px] lg:text-left lg:text-[20px]">
+          <p className="max-w-[700px] whitespace-pre-line text-center text-[16px] mr-auto ml-auto text-text md:text-[18px] lg:text-left lg:text-[20px]">
             <FormattedMessage
               id="about.description"
               values={{

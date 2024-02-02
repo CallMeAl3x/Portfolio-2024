@@ -5,10 +5,10 @@ import github from "/github.svg";
 const Footer = () => {
   return (
     <footer
-      className="section dark:gradient-background-footer-dark gradient-background-footer-light mt-96 h-full rounded-t-[86px] pb-12 lg:pb-24"
+      className="section dark:gradient-background-footer-dark gradient-background-footer-light lg:mt-24 h-full rounded-t-[86px] pb-12 lg:pb-24"
       id="contact"
     >
-      <h3 className="gradient-text relative top-16 mb-44 mt-20 bg-gradient-footer-tittle text-center font-[Monrope] text-[60px] font-semibold lg:text-[70px]">
+      <h3 className="gradient-text relative top-16 mb-44 mt-20 bg-gradient-footer-tittle text-center font-manrope text-[60px] font-semibold lg:text-[70px]">
         Contact
       </h3>
       <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
