@@ -55,7 +55,7 @@ const Works = () => {
       className="section work part mx-8 mt-32 flex flex-col gap-24 xl:mx-0 xl:mt-32"
       id="works"
     >
-      <h3 className="gradient-text mt-20 bg-gradient-title bg-clip-text text-center font-[Monrope] text-[60px] font-semibold sm:text-[70px] lg:text-[102px] xl:mt-48 ">
+      <h3 className="gradient-text font-font-manrope mt-20 bg-gradient-title bg-clip-text text-center text-[60px] font-semibold sm:text-[70px] lg:text-[102px] xl:mt-48 ">
         Works
       </h3>
       <div className="card component mt-0 flex flex-col justify-center gap-8 sm:flex-row sm:items-center lg:mt-10 lg:max-w-[84%] xl:ml-auto xl:mr-auto xl:gap-24">
@@ -97,7 +97,7 @@ const Works = () => {
             <a
               href={Links.WeatherWebsite}
               role="button"
-              className="font-inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
+              className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
             </a>
@@ -153,7 +153,7 @@ const Works = () => {
             </a>
             <a
               href={Links.WebdocumentaireWebsite}
-              className="font-inter flex w-max cursor-pointer items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
+              className="flex w-max cursor-pointer items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
             </a>
@@ -206,7 +206,7 @@ const Works = () => {
             <a
               href={Links.DataVisualisationWebsite}
               role="button"
-              className="font-inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
+              className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
             </a>
@@ -259,7 +259,7 @@ const Works = () => {
             <a
               href={Links.TranslateAppWebsite}
               role="button"
-              className="font-inter flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
+              className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
             </a>

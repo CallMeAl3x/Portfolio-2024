@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: Monrope;
+  font-family: Manrope;
   src: url("../src/fonts/Manrope/Manrope-VariableFont_wght.ttf")
     format("truetype");
   font-weight: Medium;
@@ -326,6 +326,29 @@ html {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-card-skills-dark {
+    background: rgb(0, 77, 255);
+    background: -moz-linear-gradient(
+      180deg,
+      rgba(0, 77, 255, 0.66) 0%,
+      rgba(0, 89, 211, 0.8) 50%,
+      rgba(0, 103, 161, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      180deg,
+      rgba(0, 77, 255, 0.66) 0%,
+      rgba(0, 89, 211, 0.8) 50%,
+      rgba(0, 103, 161, 1) 100%
+    );
+    background: linear-gradient(
+      180deg,
+      rgba(0, 77, 255, 0.66) 0%,
+      rgba(0, 89, 211, 0.8) 50%,
+      rgba(0, 103, 161, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#004dff",endColorstr="#0067a1",GradientType=1);
   }
 }
 
