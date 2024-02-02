@@ -159,9 +159,10 @@ html {
   }
 
   .gradient-background-dark {
-    background-image: url(/background-hero.png);
+    background-image: url(/background-hero.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
 
   .gradient-background-light {
