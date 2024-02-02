@@ -3,14 +3,14 @@ import { FormattedMessage } from "react-intl";
 const Hero = () => {
   return (
     <main
-      className="section dark:gradient-background-dark gradient-background-light flex h-max w-full flex-col rounded-[70px] px-1.5 text-background dark:text-text  sm:h-[84lvh] sm:px-0 lg:h-[100vh] lg:rounded-b-[150px]"
+      className="section dark:gradient-background-dark gradient-background-light flex h-max w-full flex-col rounded-b-[70px] px-1.5 text-background dark:text-text  sm:h-[84lvh] sm:px-0 lg:h-[100vh] lg:rounded-b-[40px]"
       id="home"
     >
       <div className="xl:justify-left flex h-full flex-col items-center justify-center gap-12 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-8 xl:items-center">
         <h2 className="mt-20 text-[45px] sm:text-[50px] lg:mt-24 lg:text-[74px] xl:text-[94px]">
           Bonefons Alexandre
         </h2>
-        <h3 className="max-w-[1000px] text-center text-[22px] text-[#00BFFF] sm:text-[26px] lg:text-[50px]">
+        <h3 className="max-w-[1000px] text-center text-[22px] text-[#4992ff] dark:text-[#00FFFF] sm:text-[26px] lg:text-[50px]">
           <FormattedMessage id="hero.description" />
         </h3>
 
@@ -24,7 +24,9 @@ const Hero = () => {
                 </a>
               ), // Pour surligner
               highlight: (words) => (
-                <span className="wordenternship">{words}</span>
+                <span className="wordenternship-light dark:wordenternship">
+                  {words}
+                </span>
               ), // Pour surligner
             }}
           />

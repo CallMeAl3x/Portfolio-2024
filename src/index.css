@@ -166,9 +166,11 @@ html {
   }
 
   .gradient-background-light {
-    background-image: url(/background-hero_light.png);
+    background-image: url(/background-hero.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
+    background-color: black;
   }
 
   .gradient-nav-light {
@@ -360,6 +362,18 @@ html {
     );
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85b9ff",endColorstr="#006cff",GradientType=1);
   }
+
+  .wordenternship {
+    color: #00ffff;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .wordenternship-light {
+    color: #4992ff;
+    font-size: larger;
+    font-weight: bold;
+  }
 }
 
 .menu-background {
@@ -409,10 +423,4 @@ html {
 .worklink {
   color: var(--accent);
   text-decoration: underline;
-}
-
-.wordenternship {
-  color: var(--accent);
-  text-decoration: underline;
-  font-size: larger;
 }
