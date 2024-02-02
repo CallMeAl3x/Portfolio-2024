@@ -15,7 +15,7 @@
 
   "hero.description": "Développeur front-end, passionné par le responsive design.",
   "hero.title": "Développeur Web",
-  "hero.stage": "Recherchant un stage à partir du 8 Avril pour une durée de 10 semaines minimum",
+  "hero.stage": "Recherchant un stage à partir du <highlight>8 Avril</highlight> pour une durée de <highlight>10 semaines</highlight> minimum",
 
   "card_description1": "Weather App est un site qui permet aux utilisateurs de voir la météo actuelle et les prévisions à venir dans la ville de votre choix.\nJ'ai utilisé Vite, TailwindCSS ainsi que Fetch API pour le construire. \nLe design m'a été donné par DevChallenges",
   "card_title1": "Weather",

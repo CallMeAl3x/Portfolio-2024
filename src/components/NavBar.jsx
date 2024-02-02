@@ -236,7 +236,7 @@ const Navbar = () => {
         </div>
 
         <nav className="navpc animate__animated animate__slideInDown z-[9999] p-4 text-[#e7ebf3] dark:text-text">
-          <ul className="box-shadow-nav relative z-[9999] flex w-fit items-center justify-center gap-8 rounded-[60px] border-solid border-[#404040]/5 bg-secondary px-6 py-2 text-xl xl:gap-16">
+          <ul className="box-shadow-nav relative z-[9999] flex w-fit items-center justify-center gap-8 rounded-[60px] border-solid border-[#404040]/5 bg-secondary px-6 py-2 text-xl shadow-xl backdrop-blur-md xl:gap-16">
             <div className="menu-background" style={backgroundStyle}></div>
             {[
               ["Home", "#home"],

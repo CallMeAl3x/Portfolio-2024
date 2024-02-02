@@ -159,46 +159,15 @@ html {
   }
 
   .gradient-background-dark {
-    background: rgb(0, 0, 0);
-    background: -moz-linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(16, 54, 142, 0.8) 100%
-    );
-    background: -webkit-linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(16, 54, 142, 0.8) 100%
-    );
-    background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(16, 54, 142, 0.8) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#10368e", GradientType=1);
+    background-image: url(/background-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .gradient-background-light {
-    background: rgb(241, 244, 248);
-    background: -moz-linear-gradient(
-      180deg,
-      rgba(241, 244, 248, 0.65) 0%,
-      rgba(129, 223, 255, 0.5) 50%,
-      rgba(0, 191, 255, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      180deg,
-      rgba(241, 244, 248, 0.65) 0%,
-      rgba(129, 223, 255, 0.5) 50%,
-      rgba(0, 191, 255, 1) 100%
-    );
-    background: linear-gradient(
-      180deg,
-      rgba(241, 244, 248, 0.65) 0%,
-      rgba(129, 223, 255, 0.5) 50%,
-      rgba(0, 191, 255, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1f4f8", endColorstr="#00bfff", GradientType=1);
+    background-image: url(/background-hero_light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .gradient-nav-light {
@@ -439,4 +408,10 @@ html {
 .worklink {
   color: var(--accent);
   text-decoration: underline;
+}
+
+.wordenternship {
+  color: var(--accent);
+  text-decoration: underline;
+  font-size: larger;
 }
