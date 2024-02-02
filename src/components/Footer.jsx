@@ -1,6 +1,7 @@
 import mail from "/mail.svg";
 import linkedin from "/linkedin.svg";
 import github from "/github.svg";
+import { FormattedMessage } from "react-intl";
 
 const Footer = () => {
   return (
@@ -45,7 +46,7 @@ const Footer = () => {
       </div>
 
       <p className="mt-16 flex justify-center text-text">
-        Copyright ©2024 - All rights reserved
+        <FormattedMessage id="rights" />
       </p>
     </footer>
   );

@@ -6,8 +6,15 @@ import translateapp from "/translateapp.png";
 import "../index.css";
 import ReactCurvedText from "react-curved-text";
 import Links from "../utils/Links";
+import { useLanguage } from "../LanguageContext";
 
 const Works = () => {
+  const { locale } = useLanguage();
+
+  const isFrench = locale === "fr";
+
+  const text = isFrench ? "Voir sur Github" : "See on Github";
+
   const textanimation = (
     <ReactCurvedText
       width={100}
@@ -18,7 +25,7 @@ const Works = () => {
       ry={42.5}
       startOffset={0}
       reversed={false}
-      text="Voir sur Github"
+      text={text}
       textProps={{ style: { fontSize: 20 } }}
       textPathProps={{
         fill: "#ffffff",
@@ -99,7 +106,7 @@ const Works = () => {
               role="button"
               className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
-              Voir le site
+              <FormattedMessage id="websitesee" />
             </a>
           </div>
         </div>

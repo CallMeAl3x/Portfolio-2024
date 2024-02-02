@@ -1,6 +1,13 @@
 import { FormattedMessage } from "react-intl";
+import { useLanguage } from "../LanguageContext";
 
 const Skills = () => {
+  const locale = useLanguage();
+
+  const isFrench = locale === "fr";
+
+  const mybox = isFrench ? "Ma boite à" : "My box of";
+  const tools = isFrench ? "outils" : "tools";
   return (
     <main
       className="section work part mt-32 flex flex-col gap-12 lg:mx-32 xl:mt-32"
@@ -88,10 +95,10 @@ const Skills = () => {
 
         <div className="tools_container">
           <h3 className="text-center text-5xl text-text lg:text-left">
-            Ma boîte à <span className="text-[#073EFF]">outils</span>
+            {mybox} <span className="text-[#073EFF]">{tools}</span>
           </h3>
 
-          <div className="tools_container_card ml-auto mr-auto mt-8 grid w-fit grid-cols-2 gap-8 gap-x-6 gap-y-6 md:grid-cols-4 md:gap-10 lg:ml-0 lg:mt-0 lg:gap-8 lg:gap-y-0 xl:grid-cols-5">
+          <div className="tools_container_card ml-auto mr-auto mt-8 grid w-fit grid-cols-2 gap-8 gap-x-6 gap-y-6 md:grid-cols-4 md:gap-10 lg:ml-0 lg:mt-0 lg:gap-8 lg:gap-y-0 xl:grid-cols-5 2xl:grid-cols-6">
             {[
               ["Visual Code", "/visualcode.svg"],
               ["Figma", "/figma.svg"],
