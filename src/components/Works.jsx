@@ -95,6 +95,7 @@ const Works = () => {
               href={Links.WeatherGithub}
               data-url={Links.WeatherGithub}
               className="z-[2]"
+              aria-label="Voir le projet Weather sur GitHub"
             >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
@@ -117,7 +118,7 @@ const Works = () => {
               loading="lazy"
               src={weatherapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
-              alt=""
+              alt="WeatherApp"
             />
           </a>
         </div>
@@ -153,6 +154,7 @@ const Works = () => {
               href={Links.WebdocumentaireGithub}
               data-url={Links.WebdocumentaireGithub}
               className="z-[2]"
+              aria-label="Voir le projet Webdocumentaire sur GitHub"
             >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
@@ -174,7 +176,7 @@ const Works = () => {
               loading="lazy"
               src={webdocumentary}
               className="h-full w-auto cursor-pointer xl:max-w-none"
-              alt=""
+              alt="Weather App"
             />
           </a>
         </div>
@@ -206,7 +208,11 @@ const Works = () => {
             </div>
           </div>
           <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-end lg:gap-0 xl:ml-12 xl:flex-col xl:justify-between xl:pr-12">
-            <a href={Links.DataVisualisationGithub} className="z-[2]">
+            <a
+              href={Links.DataVisualisationGithub}
+              className="z-[2]"
+              aria-label="Voir le projet Webdocumentaire sur GitHub"
+            >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
                 {textanimation}
@@ -228,7 +234,7 @@ const Works = () => {
               src={datavisualisation}
               loading="lazy"
               className="h-full w-auto cursor-pointer xl:max-w-none"
-              alt=""
+              alt="Datavisualisation"
             />
           </a>
         </div>
@@ -260,7 +266,11 @@ const Works = () => {
             </div>
           </div>
           <div className="relative mb-10 mt-6 flex flex-col items-center justify-evenly gap-12 lg:flex-row lg:items-start lg:gap-0 xl:ml-12 xl:flex-col xl:justify-between xl:pr-12">
-            <a href={Links.TranslateAppGithub} className="z-[2]">
+            <a
+              href={Links.TranslateAppGithub}
+              className="z-[2]"
+              aria-label="Voir le projet Webdocumentaire sur GitHub"
+            >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
                 {textanimation}
@@ -282,7 +292,7 @@ const Works = () => {
               loading="lazy"
               src={translateapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
-              alt=""
+              alt="Translate App"
             />
           </a>
         </div>
