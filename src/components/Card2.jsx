@@ -28,7 +28,6 @@ const Card2 = () => {
         ${Math.log(distance) * 1}deg
       )
     `;
-    console.log(center.y / 100);
   };
   const removeListener = () => {
     inputRef.current.style.transform = "";

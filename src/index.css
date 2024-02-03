@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: Syne;
   src: url("../src/fonts/Syne/Syne-VariableFont_wght.ttf");
