@@ -149,9 +149,13 @@ const Navbar = () => {
             d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
           />
         </svg>
-        <label className="mr-12 flex items-center justify-center rounded-full bg-[#0D1224] p-2.5 lg:hidden">
+        <label
+          className="mr-12 flex items-center justify-center rounded-full bg-[#0D1224] p-2.5 lg:hidden"
+          htmlFor="darkModeToggle"
+        >
           <input
             type="checkbox"
+            id="darkModeToggle"
             checked={darkMode}
             onChange={handleDarkModeToggle}
             className="appearance-none"
@@ -181,25 +185,27 @@ const Navbar = () => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-500 ease-in-out`}
       >
-        <ul className="flex h-full w-full flex-col items-center justify-center gap-16 px-6 py-2 text-3xl font-semibold">
-          {[
-            ["Home", "#home"],
-            ["Works", "#works"],
-            ["About", "#about"],
-            ["Skills", "#skills"],
-            ["Contact", "#contact"],
-          ].map(([text, href]) => (
-            <li
-              key={text}
-              className={`"text-3xl font-semibold" flex items-center justify-center text-text ${
-                activeSection === text ? "active_mobile" : ""
-              }`}
-              onClick={handleHamburgerToggle}
-            >
-              <a href={href}>{text}</a>
-            </li>
-          ))}
-          <div className="mt-12 flex gap-4 text-3xl font-semibold">
+        <div className="flex h-full w-full flex-col items-center justify-center">
+          <ul className="mt-auto flex flex-col items-center justify-center gap-16 px-6 py-2 text-3xl font-semibold">
+            {[
+              ["Home", "#home"],
+              ["Works", "#works"],
+              ["About", "#about"],
+              ["Skills", "#skills"],
+              ["Contact", "#contact"],
+            ].map(([text, href]) => (
+              <li
+                key={text}
+                className={`"text-3xl font-semibold" flex items-center justify-center text-text ${
+                  activeSection === text ? "active_mobile" : ""
+                }`}
+                onClick={handleHamburgerToggle}
+              >
+                <a href={href}>{text}</a>
+              </li>
+            ))}
+          </ul>
+          <div className="mb-auto mt-auto flex gap-4 text-3xl font-semibold">
             <button
               onClick={handleLangageToggleEN}
               className={`${locale === "en" ? "text-accent" : "text-text"}`}
@@ -213,7 +219,7 @@ const Navbar = () => {
               FR
             </button>
           </div>
-        </ul>
+        </div>
       </nav>
       <div className="header-container animate__animated animate__slideInDown fixed left-0 right-0 top-6 z-10 flex items-center justify-center max-lg:hidden lg:gap-6 xl:gap-24">
         <div className="language-switcher flex gap-4 rounded-xl bg-secondary p-2 text-xl font-bold">
