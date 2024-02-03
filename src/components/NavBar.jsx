@@ -16,6 +16,11 @@ const Navbar = () => {
   // Au début mettre le background sur le premier élément
   const [lastActiveSection, setLastActiveSection] = useState(null);
 
+  if (window.pageYOffset <= 420) {
+    const fill = "black";
+  } else {
+    const fill = "white";
+  }
   useEffect(() => {
     const updateBackgroundStyle = () => {
       // Recherche de l'élément actif dans la liste (avec la classe "active")

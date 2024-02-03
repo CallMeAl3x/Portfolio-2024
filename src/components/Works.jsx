@@ -107,6 +107,8 @@ const Works = () => {
             <a
               href={Links.WeatherWebsite}
               role="button"
+              target="_blank"
+              rel="noreferrer"
               className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               <FormattedMessage id="websitesee" />
@@ -168,6 +170,8 @@ const Works = () => {
             </a>
             <a
               href={Links.WebdocumentaireWebsite}
+              target="_blank"
+              rel="noreferrer"
               className="flex w-max cursor-pointer items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
@@ -229,6 +233,8 @@ const Works = () => {
             <a
               href={Links.DataVisualisationWebsite}
               role="button"
+              target="_blank"
+              rel="noreferrer"
               className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
@@ -290,6 +296,8 @@ const Works = () => {
             <a
               href={Links.TranslateAppWebsite}
               role="button"
+              target="_blank"
+              rel="noreferrer"
               className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
             >
               Voir le site
