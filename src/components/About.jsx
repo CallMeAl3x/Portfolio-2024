@@ -16,8 +16,8 @@ const About = () => {
           className="z-[3] mt-12 w-full lg:w-1/2"
           draggable={false}
         />
-        <div className="lg:p-46 xl:mt-22 mt-8 w-full p-4 lg:w-1/2">
-          <p className="ml-auto mr-auto max-w-[700px] whitespace-pre-line text-center text-[16px] text-text md:text-[18px] lg:text-left lg:text-[20px]">
+        <div className="lg:p-46 xl:mt-22 mt-8 flex w-full flex-col p-4 lg:w-1/2 xl:ml-12">
+          <p className="ml-auto mr-auto max-w-[700px] whitespace-pre-line text-center text-[16px] text-text md:text-[18px] lg:text-left lg:text-[20px] xl:ml-0 xl:mr-0">
             <FormattedMessage
               id="about.description"
               values={{
@@ -30,6 +30,13 @@ const About = () => {
               }}
             />
           </p>
+          <a
+            href="/CV_Bonefons_Alexandre.pdf"
+            target="_blank"
+            className="font-syne ml-auto mr-auto mt-8 w-fit rounded-xl bg-white p-2 text-2xl font-semibold text-background xl:ml-0"
+          >
+            Mon CV
+          </a>
         </div>
       </div>
     </section>
