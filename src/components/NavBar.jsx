@@ -193,15 +193,15 @@ const Navbar = () => {
             ["Skills", "#skills"],
             ["Contact", "#contact"],
           ].map(([text, href]) => (
-            <li
+            <div
               key={text}
-              className={`"text-3xl font-semibold" flex items-center justify-center text-text ${
+              className={`font-semibold" flex items-center justify-center text-3xl text-text ${
                 activeSection === text ? "active_mobile" : ""
               }`}
               onClick={handleHamburgerToggle}
             >
               <a href={href}>{text}</a>
-            </li>
+            </div>
           ))}
           <div className="mt-12 flex gap-4 text-3xl font-semibold">
             <button
