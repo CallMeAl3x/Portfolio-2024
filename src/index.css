@@ -386,6 +386,29 @@ html {
     font-size: larger;
     font-weight: bold;
   }
+
+  .card {
+    box-shadow: 0 1px 5px #00000099;
+
+    border-radius: 2%;
+
+    position: relative;
+
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+  }
+
+  .card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 1px 20px 0.2px rgba(255, 255, 255, 0.34);
+  }
+
+  .card-light:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 1px 20px 0.2px rgba(0, 0, 0, 0.352);
+  }
 }
 
 .menu-background {
@@ -435,4 +458,8 @@ html {
 .worklink {
   color: var(--accent);
   text-decoration: underline;
+}
+
+.app {
+  perspective: 1500px;
 }
