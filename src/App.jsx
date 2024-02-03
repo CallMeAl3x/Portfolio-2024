@@ -4,7 +4,6 @@ import messagesEn from "./translations/en.json";
 import { IntlProvider } from "react-intl";
 import { DarkModeContext } from "./DarkModeContext";
 import { useLanguage } from "./LanguageContext";
-import "./styles/App.css";
 import Footer from "./components/Footer";
 import Works from "./components/Works";
 import Hero from "./components/Hero";
