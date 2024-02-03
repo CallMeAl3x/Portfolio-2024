@@ -1,8 +1,8 @@
 import { FormattedMessage } from "react-intl";
-import weatherapp from "/weatherapp.png";
-import webdocumentary from "/webdocumentary.png";
-import datavisualisation from "/datavisualisation.png";
-import translateapp from "/translateapp.png";
+import weatherapp from "/weatherapp.webp";
+import webdocumentary from "/webdocumentary.webp";
+import datavisualisation from "/datavisualisation.webp";
+import translateapp from "/translateapp.webp";
 import "../index.css";
 import ReactCurvedText from "react-curved-text";
 import Links from "../utils/Links";

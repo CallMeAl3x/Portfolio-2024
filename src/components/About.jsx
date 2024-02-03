@@ -1,5 +1,5 @@
 import { FormattedMessage } from "react-intl";
-import man from "/man.png";
+import man from "/man.webp";
 
 const About = () => {
   return (
