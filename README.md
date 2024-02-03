@@ -18,7 +18,7 @@ Dans ce portfolio, vous trouverez une diversité de projets sur lesquels j'ai tr
 Je suis toujours ouvert à discuter de nouvelles opportunités, de collaborations ou tout simplement d'échanger sur des idées innovantes. N'hésitez pas à me contacter :
 
 - **Email :** [Alexandre.bonefons@outlook.fr](mailto:Alexandre.bonefons@outlook.fr)
-- **LinkedIn :** [Mon Linkedin](https://www.linkedin.com/in/alexandre-bonefons-166875250/)
+- **LinkedIn :** [Bonefons Alexandre](https://www.linkedin.com/in/alexandre-bonefons-166875250/)
 
 Merci d'avoir visité mon portfolio. J'espère que mes travaux vous inspireront ou ouvriront la porte à de futures collaborations.
 
