@@ -33,7 +33,6 @@ const Navbar = () => {
       });
     };
 
-    // Ajout de l'écouteur d'événement pour le défilement
     window.addEventListener("scroll", changePathColor);
 
     // Fonction de nettoyage pour supprimer l'écouteur d'événement
@@ -62,7 +61,6 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.pageYOffset;
       let newActiveSection = "Home";
-      console.log(currentScrollY);
       let scrollSectionMap;
 
       if (window.innerWidth >= 360) {
