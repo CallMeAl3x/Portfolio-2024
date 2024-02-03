@@ -1,8 +1,27 @@
-# React + Vite
+# Bienvenue sur mon Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## À propos de moi
 
-Currently, two official plugins are available:
+Je suis un développeur passionné par la création de solutions web innovantes. Mon portfolio présente une sélection de mes projets les plus intéressants et pertinents. À travers ces travaux, je souhaite partager non seulement mon expertise technique mais aussi ma capacité à résoudre des problèmes complexes et à mener des projets du concept à la réalisation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Mes Projets
+
+Dans ce portfolio, vous trouverez une diversité de projets sur lesquels j'ai travaillé. Chaque projet est accompagné d'une brève description, des technologies utilisées, ainsi que d'un lien vers le projet en lui-même ou vers le code source. Ces projets illustrent mon savoir-faire en matière de développement web, de conception UI/UX.
+
+## Fait avec
+
+- **Langages de Programmation :** Vite.js, TailwindCSS, ReactContext, AnimateCSS, CurvedText, React-intl
+- **Outils utilisés :** Git, ChatGPT
+
+## Me Contacter
+
+Je suis toujours ouvert à discuter de nouvelles opportunités, de collaborations ou tout simplement d'échanger sur des idées innovantes. N'hésitez pas à me contacter :
+
+- **Email :** [Alexandre.bonefons@outlook.fr](mailto:Alexandre.bonefons@outlook.fr)
+- **LinkedIn :** [Mon Linkedin](https://www.linkedin.com/in/alexandre-bonefons-166875250/)
+
+Merci d'avoir visité mon portfolio. J'espère que mes travaux vous inspireront ou ouvriront la porte à de futures collaborations.
+
+---
+
+© [Bonefons Alexandre]. Tous droits réservés.
