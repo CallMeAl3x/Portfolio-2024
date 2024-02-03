@@ -62,7 +62,7 @@ const Works = () => {
       className="section work part mx-4 mt-32 flex flex-col items-center gap-24 md:mx-8 xl:mx-0 xl:ml-auto xl:mr-auto xl:mt-32"
       id="works"
     >
-      <h3 className="gradient-text font-font-manrope bg-gradient-footer-tittle_white mt-20 bg-clip-text text-center text-[60px] font-semibold dark:bg-gradient-title sm:text-[70px] lg:text-[102px] xl:mt-48 ">
+      <h3 className="gradient-text font-font-manrope mt-20 bg-gradient-footer-tittle_white bg-clip-text text-center text-[60px] font-semibold dark:bg-gradient-title sm:text-[70px] lg:text-[102px] xl:mt-48 ">
         <FormattedMessage id="works.title" />
       </h3>
       <div className="card component mt-0 flex flex-col justify-center gap-8 sm:flex-row sm:items-center lg:mt-10 lg:max-w-[84%] xl:ml-auto xl:mr-auto xl:gap-24">

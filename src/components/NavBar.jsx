@@ -8,6 +8,7 @@ import moon_active from "/moon_active.svg";
 import moon_inactive from "/moon_inactive.svg";
 
 const Navbar = () => {
+  const { darkMode, setDarkMode } = useContext(DarkModeContext);
   const [activeSection, setActiveSection] = useState(null);
   const [backgroundStyle, setBackgroundStyle] = useState({
     left: "24px",
@@ -16,11 +17,31 @@ const Navbar = () => {
   // Au début mettre le background sur le premier élément
   const [lastActiveSection, setLastActiveSection] = useState(null);
 
-  if (window.pageYOffset <= 420) {
-    const fill = "black";
-  } else {
-    const fill = "white";
-  }
+  useEffect(() => {
+    const changePathColor = () => {
+      // Sélection de tous les éléments <path> avec la classe spécifique
+      const elements = document.querySelectorAll(".line");
+
+      elements.forEach((element) => {
+        if (window.pageYOffset <= 750 && darkMode === true) {
+          element.classList.remove("black-path");
+          element.classList.add("white-path");
+        } else {
+          element.classList.remove("white-path");
+          element.classList.add("black-path");
+        }
+      });
+    };
+
+    // Ajout de l'écouteur d'événement pour le défilement
+    window.addEventListener("scroll", changePathColor);
+
+    // Fonction de nettoyage pour supprimer l'écouteur d'événement
+    return () => {
+      window.removeEventListener("scroll", changePathColor);
+    };
+  }, [darkMode]);
+
   useEffect(() => {
     const updateBackgroundStyle = () => {
       // Recherche de l'élément actif dans la liste (avec la classe "active")
@@ -93,7 +114,6 @@ const Navbar = () => {
     }
   };
 
-  const { darkMode, setDarkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
   const { setLocale, locale } = useLanguage();
 
@@ -211,13 +231,13 @@ const Navbar = () => {
           <div className="mt-12 flex gap-4 text-3xl font-semibold">
             <button
               onClick={handleLangageToggleEN}
-              className={`${locale === "en" ? "text-accent" : "text-text"}`}
+              className={`${locale === "en" ? "text-white" : "text-text"}`}
             >
               EN
             </button>
             <button
               onClick={handleLangageToggleFR}
-              className={`${locale === "fr" ? "text-accent" : "text-text"}`}
+              className={`${locale === "fr" ? "text-white" : "text-text"}`}
             >
               FR
             </button>
