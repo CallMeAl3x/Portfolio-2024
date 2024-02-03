@@ -96,6 +96,8 @@ const Works = () => {
               data-url={Links.WeatherGithub}
               className="z-[2]"
               aria-label="Voir le projet Weather sur GitHub"
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
@@ -119,6 +121,7 @@ const Works = () => {
               src={weatherapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt="WeatherApp"
+              target="_blank"
             />
           </a>
         </div>
@@ -155,6 +158,8 @@ const Works = () => {
               data-url={Links.WebdocumentaireGithub}
               className="z-[2]"
               aria-label="Voir le projet Webdocumentaire sur GitHub"
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
@@ -177,6 +182,7 @@ const Works = () => {
               src={webdocumentary}
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt="Weather App"
+              target="_blank"
             />
           </a>
         </div>
@@ -212,6 +218,8 @@ const Works = () => {
               href={Links.DataVisualisationGithub}
               className="z-[2]"
               aria-label="Voir le projet Webdocumentaire sur GitHub"
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
@@ -235,6 +243,7 @@ const Works = () => {
               loading="lazy"
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt="Datavisualisation"
+              target="_blank"
             />
           </a>
         </div>
@@ -270,6 +279,8 @@ const Works = () => {
               href={Links.TranslateAppGithub}
               className="z-[2]"
               aria-label="Voir le projet Webdocumentaire sur GitHub"
+              target="_blank"
+              rel="noreferrer"
             >
               <div className="relative flex h-fit w-fit cursor-pointer justify-center align-middle">
                 {githublogo}
@@ -293,6 +304,7 @@ const Works = () => {
               src={translateapp}
               className="h-full w-auto cursor-pointer xl:max-w-none"
               alt="Translate App"
+              target="_blank"
             />
           </a>
         </div>
