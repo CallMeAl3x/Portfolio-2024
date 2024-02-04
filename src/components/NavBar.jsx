@@ -123,6 +123,14 @@ const Navbar = () => {
     setLocale("en");
   };
 
+  const handleLangageToggleAcce = () => {
+    if (locale === "fr") {
+      handleLangageToggleEN();
+    } else {
+      handleLangageToggleFR();
+    }
+  };
+
   const handleDarkModeToggle = () => {
     setDarkMode(!darkMode);
   };
@@ -243,7 +251,10 @@ const Navbar = () => {
         </div>
       </nav>
       <div className="header-container animate__animated animate__slideInDown fixed left-0 right-0 top-6 z-10 flex items-center justify-center max-lg:hidden lg:gap-6 xl:gap-24">
-        <div className="language-switcher flex gap-4 rounded-xl bg-secondary p-2 text-xl font-bold">
+        <div
+          className="language-switcher flex gap-4 rounded-xl bg-secondary p-2 text-xl font-bold"
+          onClick={handleLangageToggleAcce}
+        >
           <button
             onClick={handleLangageToggleEN}
             className={`${
