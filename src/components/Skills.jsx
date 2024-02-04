@@ -22,12 +22,12 @@ const Skills = () => {
 
       <section className="flex flex-col gap-24 lg:gap-16">
         <div className="front_container">
-          <h3 className="text-center text-5xl text-[#073EFF] lg:text-left">
+          <h3 className="text-center text-5xl text-[#073EFF] lg:text-left 2xl:text-center">
             Front<span className="text-text">end</span>
           </h3>
 
-          <div className="ml-auto mr-auto mt-8 flex flex-col items-center gap-6 md:w-fit md:flex-row lg:ml-0">
-            <div className="mb flex gap-6">
+          <div className="ml-auto mr-auto mt-8 flex flex-col items-center gap-6 md:w-fit md:flex-row lg:ml-0 2xl:ml-auto">
+            <div className="mb flex gap-6 ">
               <div className="dark:skill_card skill_card_white">
                 <img
                   src="/vite.svg"
@@ -36,7 +36,7 @@ const Skills = () => {
                   loading="lazy"
                   alt="Vite logo"
                 />
-                <p className="text_skill_card text-background dark:text-text ">
+                <p className="text_skill_card text-text dark:text-text ">
                   Vite
                 </p>
               </div>
@@ -48,7 +48,7 @@ const Skills = () => {
                   draggable={false}
                   alt="Angular logo"
                 />
-                <p className="text_skill_card text-background dark:text-text ">
+                <p className="text_skill_card text-text dark:text-text ">
                   Angular
                 </p>
               </div>
@@ -62,7 +62,7 @@ const Skills = () => {
                 draggable={false}
                 alt="Tailwindcss logo"
               />
-              <p className="text_skill_card text-background dark:text-text ">
+              <p className="text_skill_card text-text dark:text-text ">
                 Tailwind
               </p>
             </div>
@@ -70,11 +70,11 @@ const Skills = () => {
         </div>
 
         <div className="back_container">
-          <h3 className="text-center text-5xl text-[#073EFF] lg:text-left">
+          <h3 className="text-center text-5xl text-[#073EFF] lg:text-left 2xl:text-center">
             Back<span className="text-text">end</span>
           </h3>
 
-          <div className="ml-auto mr-auto mt-8 flex flex-col items-center gap-6 md:w-fit md:flex-row lg:ml-0">
+          <div className="ml-auto mr-auto mt-8 flex flex-col items-center gap-6 md:w-fit md:flex-row lg:ml-0 2xl:ml-auto">
             <div className="mb flex gap-6">
               <div className="dark:skill_card skill_card_white">
                 <img
@@ -84,7 +84,7 @@ const Skills = () => {
                   draggable={false}
                   alt="Symfony logo"
                 />
-                <p className="text_skill_card text-background dark:text-text ">
+                <p className="text_skill_card text-text dark:text-text ">
                   Symfony
                 </p>
               </div>
@@ -96,9 +96,7 @@ const Skills = () => {
                   draggable={false}
                   alt="PhP logo"
                 />
-                <p className="text_skill_card text-background dark:text-text ">
-                  PhP
-                </p>
+                <p className="text_skill_card text-text dark:text-text ">PhP</p>
               </div>
             </div>
 
@@ -110,7 +108,7 @@ const Skills = () => {
                 draggable={false}
                 alt="NodeJS logo"
               />
-              <p className="text_skill_card text-background dark:text-text ">
+              <p className="text_skill_card text-text dark:text-text ">
                 NodeJS
               </p>
             </div>
@@ -118,16 +116,16 @@ const Skills = () => {
         </div>
 
         <div className="tools_container">
-          <h3 className="text-center text-5xl text-text lg:text-left">
+          <h3 className="text-center text-5xl text-text lg:text-left 2xl:text-center">
             {mybox} <span className="text-[#073EFF]">{tools}</span>
           </h3>
 
-          <div className="tools_container_card ml-auto mr-auto mt-8 grid w-fit grid-cols-2 gap-8 gap-x-6 gap-y-6 md:grid-cols-4 md:gap-10 lg:ml-0 lg:mt-0 lg:gap-8 lg:gap-y-0 xl:grid-cols-5 2xl:grid-cols-6">
+          <div className="tools_container_card ml-auto mr-auto mt-8 grid w-fit grid-cols-2 gap-8 gap-x-6 gap-y-6 md:grid-cols-4 md:gap-10 lg:ml-0 lg:mt-0 lg:gap-8 lg:gap-y-0 xl:grid-cols-5 2xl:ml-auto 2xl:grid-cols-5">
             {[
               ["Visual Code", "/visualcode.svg"],
               ["Figma", "/figma.svg"],
               ["Git", "/git.svg"],
-              ["Github", "/github.svg"],
+              ["Github", "/github_black.svg"],
               ["Wordpress", "/wordpress.svg"],
               ["Illustrator", "/illustrator.svg"],
               ["Photoshop", "/photoshop.svg"],
@@ -145,7 +143,7 @@ const Skills = () => {
                   alt="techlogo"
                   className="h-10 w-10 md:h-12 md:w-12 lg:h-16 lg:w-16"
                 />
-                <p className="text_skill_card text-center text-background dark:text-text ">
+                <p className="text_skill_card text-center text-text dark:text-text ">
                   {techname}
                 </p>
               </div>

@@ -208,7 +208,7 @@ const Navbar = () => {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-500 ease-in-out`}
       >
-        <div className="flex h-full w-full flex-col items-center justify-center gap-16 px-6 py-2 text-3xl font-semibold">
+        <div className="flex h-full w-full flex-col items-center justify-center gap-10 px-6 py-2 text-3xl font-semibold">
           {[
             ["Home", "#home"],
             ["Works", "#works"],

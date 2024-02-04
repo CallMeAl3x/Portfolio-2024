@@ -95,7 +95,7 @@ const Card2 = () => {
           <img
             loading="lazy"
             src={webdocumentary}
-            className="h-full w-auto cursor-pointer xl:max-w-none"
+            className="hidden h-full w-auto cursor-pointer sm:block xl:max-w-none"
             alt="Weather App"
             target="_blank"
           />

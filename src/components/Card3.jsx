@@ -95,7 +95,7 @@ const Card3 = () => {
           <img
             src={datavisualisation}
             loading="lazy"
-            className="h-full w-auto cursor-pointer xl:max-w-none"
+            className="hidden h-full w-auto cursor-pointer sm:block xl:max-w-none"
             alt="Datavisualisation"
             target="_blank"
           />
