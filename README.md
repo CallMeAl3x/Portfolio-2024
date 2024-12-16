@@ -19,6 +19,7 @@ Je suis toujours ouvert à discuter de nouvelles opportunités, de collaboration
 
 - **Email :** [Alexandre.bonefons@outlook.fr](mailto:Alexandre.bonefons@outlook.fr)
 - **LinkedIn :** [Bonefons Alexandre](https://www.linkedin.com/in/alexandre-bonefons-166875250/)
+- **Lien pour le site live:** [Lien](https://www.portfolio-2024.bonefons.com) 
 
 Merci d'avoir visité mon portfolio. J'espère que mes travaux vous inspireront ou ouvriront la porte à de futures collaborations.
 
