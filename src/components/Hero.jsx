@@ -3,7 +3,7 @@ import { FormattedMessage } from "react-intl";
 const Hero = () => {
   return (
     <main
-      className="section dark:gradient-background-dark gradient-background-light flex h-[100lvh] w-full flex-col rounded-b-[70px] px-1.5 text-background dark:text-text  sm:h-[84lvh] sm:px-0 lg:h-[100vh] lg:rounded-b-[40px]"
+      className="section dark:gradient-background-dark gradient-background-light flex h-[100lvh] w-full flex-col rounded-b-[70px] px-1.5 text-background dark:text-text sm:h-[84lvh] sm:px-0 lg:h-[100vh] lg:rounded-b-[40px]"
       id="home"
     >
       <div className="xl:justify-left flex h-full flex-col items-center justify-center gap-12 text-center font-semibold md:mt-0 lg:mt-0 lg:gap-8 xl:items-center">
@@ -13,24 +13,6 @@ const Hero = () => {
         <h3 className="max-w-[1000px] text-center text-[22px] text-[#4992ff] dark:text-[#00FFFF] sm:text-[26px] lg:text-[50px]">
           <FormattedMessage id="hero.description" />
         </h3>
-
-        <h4 className="max-w-[750px] text-center text-[18px] sm:text-[26px] lg:mt-2 lg:text-[30px]">
-          <FormattedMessage
-            id="hero.stage"
-            values={{
-              travaux: (words) => (
-                <a className="worklink" href="#works">
-                  {words}
-                </a>
-              ), // Pour surligner
-              highlight: (words) => (
-                <span className="wordenternship-light dark:wordenternship">
-                  {words}
-                </span>
-              ), // Pour surligner
-            }}
-          />
-        </h4>
       </div>
       <a
         href="#works"

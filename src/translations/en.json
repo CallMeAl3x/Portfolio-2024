@@ -17,7 +17,6 @@
   "skills.title2": "me",
   "hero.description": "Front-end developer, passionate about responsive design.",
   "hero.title": "Web Developer",
-  "hero.stage": "Looking for an internship starting April 8th for a minimum of 10 weeks",
 
   "card_description1": "Weather App is a website. It allows users to view the current weather and upcoming forecasts in the city of their choice. \nI used Vite, TailwindCSS, and Fetch API to build it. \nThe design was provided to me by DevChallenges.",
   "card_title1": "Weather",
@@ -35,5 +34,5 @@
   "card_title4": "Translate",
   "card_green4": "App",
 
-  "about.description": "Hello! My name is <highlight>Alexandre Bonefons</highlight> and I am a passionate web developer, currently in the final year of my 2nd year of BUT MMI at the IUT of Velizy, specializing in the <highlight>web track</highlight>. \n\nMy curiosity and eagerness to learn have driven me to explore various aspects of development, including <highlight>front-end</highlight> and <highlight>back-end</highlight>, in order to create rich and interactive user experiences. \n\nI particularly love <highlight>responsive design</highlight>, which allows the creation of websites and applications that perfectly adapt to all types of screens. \n\nI am looking for a <highlight>web development internship</highlight> starting in <highlight>April</highlight> for a minimum duration of <highlight>10 weeks</highlight>. Feel free to browse through my portfolio to discover some of my <travaux>works</travaux>."
+  "about.description": "Hello! My name is <highlight>Alexandre Bonefons</highlight> and I am a passionate web developer, currently in the final year of my 3th year of BUT MMI at the IUT of Velizy and in bidiplomation at l'UQAC (Canada), specializing in the <highlight>web development</highlight>. \n\nMy curiosity and eagerness to learn have driven me to explore various aspects of development, including <highlight>front-end</highlight> and <highlight>back-end</highlight>, in order to create rich and interactive user experiences. \n\nI particularly love <highlight>responsive design</highlight>, which allows the creation of websites and applications that perfectly adapt to all types of screens."
 }

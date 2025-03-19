@@ -85,7 +85,7 @@ const Card3 = () => {
             rel="noreferrer"
             className="flex w-max items-center justify-center rounded-[16px] bg-white px-2.5 py-2 font-inter text-2xl font-extrabold italic text-[#030D30] dark:bg-white"
           >
-            Voir le site
+            <FormattedMessage id="websitesee" />
           </a>
         </div>
       </div>

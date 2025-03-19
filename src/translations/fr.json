@@ -19,7 +19,6 @@
 
   "hero.description": "Développeur front-end, passionné par le responsive design.",
   "hero.title": "Développeur Web",
-  "hero.stage": "Recherchant un stage à partir du <highlight>8 Avril</highlight> pour une durée de <highlight>10 semaines</highlight> minimum",
 
   "card_description1": "Weather App est un site qui permet aux utilisateurs de voir la météo actuelle et les prévisions à venir dans la ville de votre choix.\nJ'ai utilisé Vite, TailwindCSS ainsi que Fetch API pour le construire. \nLe design m'a été donné par DevChallenges",
   "card_title1": "Weather",
@@ -37,5 +36,5 @@
   "card_title4": "Translate",
   "card_green4": "App",
 
-  "about.description": "Bonjour ! Je m'apelle <highlight>Alexandre Bonefons</highlight> et je suis un développeur web passionné, actuellement en fin de 2e année de BUT MMI à l'IUT de Velizy, spécialisé dans le <highlight>parcours web</highlight>. \n\nMa curiosité et mon désir d'apprendre m'ont poussé à explorer divers aspects du développement, notamment le <highlight>front-end</highlight> et le <highlight>back-end</highlight>, afin de créer des expériences utilisateur riches et interactives. \n\nJ'adore particulièrement le <highlight>responsive design</highlight>, ce qui permet de créer des sites et applications qui s'adaptent parfaitement à tous les types d'écrans. \n\nJe suis à la recherche d'un <highlight>stage en développement web</highlight> début <highlight>avril</highlight> pour une durée minimale de <highlight>10 semaines</highlight>. N'hésitez pas à parcourir mon portfolio pour découvrir certains de mes <travaux>travaux</travaux>."
+  "about.description": "Bonjour ! Je m'apelle <highlight>Alexandre Bonefons</highlight> et je suis un développeur web passionné, actuellement en fin de 3e année de BUT MMI à l'IUT de Velizy ainsi qu'en double diplomation à l'UQAC (Canada), spécialisé dans le <highlight>parcours web</highlight>. \n\nMa curiosité et mon désir d'apprendre m'ont poussé à explorer divers aspects du développement, notamment le <highlight>front-end</highlight> et le <highlight>back-end</highlight>, afin de créer des expériences utilisateur riches et interactives. \n\nJ'adore particulièrement le <highlight>responsive design</highlight>, ce qui permet de créer des sites et applications qui s'adaptent parfaitement à tous les types d'écrans."
 }

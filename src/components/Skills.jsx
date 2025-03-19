@@ -27,44 +27,57 @@ const Skills = () => {
           </h3>
 
           <div className="ml-auto mr-auto mt-8 flex flex-col items-center gap-6 md:w-fit md:flex-row lg:ml-0 2xl:ml-auto">
-            <div className="mb flex gap-6 ">
+            <div className="mb flex gap-6">
               <div className="dark:skill_card skill_card_white">
                 <img
-                  src="/vite.svg"
+                  src="/react.svg"
                   className="image_card"
                   draggable={false}
                   loading="lazy"
-                  alt="Vite logo"
+                  alt="React logo"
                 />
-                <p className="text_skill_card text-text dark:text-text ">
-                  Vite
+                <p className="text_skill_card text-text dark:text-text">
+                  React
                 </p>
               </div>
               <div className="dark:skill_card skill_card_white">
                 <img
-                  loading="lazy"
-                  src="/angular.svg"
+                  src="/tanstack.png"
                   className="image_card"
                   draggable={false}
-                  alt="Angular logo"
+                  loading="lazy"
+                  alt="TanStack logo"
                 />
-                <p className="text_skill_card text-text dark:text-text ">
-                  Angular
+                <p className="text_skill_card text-text dark:text-text">
+                  TanStack
                 </p>
               </div>
             </div>
-
-            <div className="dark:skill_card skill_card_white">
-              <img
-                loading="lazy"
-                src="/tailwindcss.svg"
-                className="image_card"
-                draggable={false}
-                alt="Tailwindcss logo"
-              />
-              <p className="text_skill_card text-text dark:text-text ">
-                Tailwind
-              </p>
+            <div className="mb flex gap-6">
+              <div className="dark:skill_card skill_card_white">
+                <img
+                  src="/nextjs.svg"
+                  className="image_card"
+                  draggable={false}
+                  loading="lazy"
+                  alt="Nextjs logo"
+                />
+                <p className="text_skill_card text-text dark:text-text">
+                  NextJS
+                </p>
+              </div>
+              <div className="dark:skill_card skill_card_white">
+                <img
+                  loading="lazy"
+                  src="/tailwindcss.svg"
+                  className="image_card"
+                  draggable={false}
+                  alt="Tailwindcss logo"
+                />
+                <p className="text_skill_card text-text dark:text-text">
+                  Tailwind
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -79,14 +92,12 @@ const Skills = () => {
               <div className="dark:skill_card skill_card_white">
                 <img
                   loading="lazy"
-                  src="/symfony.svg"
+                  src="/sql.svg"
                   className="image_card"
                   draggable={false}
-                  alt="Symfony logo"
+                  alt="SQL logo"
                 />
-                <p className="text_skill_card text-text dark:text-text ">
-                  Symfony
-                </p>
+                <p className="text_skill_card text-text dark:text-text">SQL</p>
               </div>
               <div className="dark:skill_card skill_card_white">
                 <img
@@ -96,21 +107,45 @@ const Skills = () => {
                   draggable={false}
                   alt="PhP logo"
                 />
-                <p className="text_skill_card text-text dark:text-text ">PhP</p>
+                <p className="text_skill_card text-text dark:text-text">PhP</p>
               </div>
             </div>
 
+            <div className="mb flex gap-6">
+              <div className="dark:skill_card skill_card_white">
+                <img
+                  src="/nodejs.svg"
+                  loading="lazy"
+                  className="image_card"
+                  draggable={false}
+                  alt="NodeJS logo"
+                />
+                <p className="text_skill_card text-text dark:text-text">
+                  NodeJS
+                </p>
+              </div>
+              <div className="dark:skill_card skill_card_white">
+                <img
+                  src="/nextjs.svg"
+                  loading="lazy"
+                  className="image_card"
+                  draggable={false}
+                  alt="NextJS logo"
+                />
+                <p className="text_skill_card text-text dark:text-text">
+                  NextJS
+                </p>
+              </div>
+            </div>
             <div className="dark:skill_card skill_card_white">
               <img
-                src="/nodejs.svg"
+                src="/azure.svg"
                 loading="lazy"
                 className="image_card"
                 draggable={false}
-                alt="NodeJS logo"
+                alt="Azure logo"
               />
-              <p className="text_skill_card text-text dark:text-text ">
-                NodeJS
-              </p>
+              <p className="text_skill_card text-text dark:text-text">Azure</p>
             </div>
           </div>
         </div>
@@ -143,7 +178,7 @@ const Skills = () => {
                   alt="techlogo"
                   className="h-10 w-10 md:h-12 md:w-12 lg:h-16 lg:w-16"
                 />
-                <p className="text_skill_card text-center text-text dark:text-text ">
+                <p className="text_skill_card text-center text-text dark:text-text">
                   {techname}
                 </p>
               </div>
